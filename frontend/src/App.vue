@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
-    <router-view/>
+      <router-view/>
     </div>
   </div>
 </template>
@@ -11,4 +11,7 @@ export default {};
 </script>
 
 <style>
+::selection {
+  background-color: #dae5de;
+}
 </style>
