@@ -1656,3 +1656,51 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:28 15:25:10.168 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:28 15:25:10.170 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72d1ad2e: startup date [Wed Nov 28 15:24:06 KST 2018]; root of context hierarchy 
 2018:11:28 15:25:10.172 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:11:28 15:28:04.044 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on co1 with PID 11956 (C:\Users\TopC290\Documents\SONG\Spring\Project\project_Mall\target\classes started by TopC290 in C:\Users\TopC290\Documents\SONG\Spring\Project\project_Mall) 
+2018:11:28 15:28:04.049 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:11:28 15:28:04.230 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72d1ad2e: startup date [Wed Nov 28 15:28:04 KST 2018]; root of context hierarchy 
+2018:11:28 15:28:05.399 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:11:28 15:28:05.421 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:11:28 15:28:05.421 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:11:28 15:28:05.527 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:11:28 15:28:05.528 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1298 ms 
+2018:11:28 15:28:05.677 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:11:28 15:28:05.679 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:11:28 15:28:05.681 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:11:28 15:28:05.682 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:11:28 15:28:05.683 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:11:28 15:28:05.684 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:11:28 15:28:06.079 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/TopC290/Documents/SONG/Spring/Project/project_Mall/target/classes/schema.sql] 
+2018:11:28 15:28:06.102 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/TopC290/Documents/SONG/Spring/Project/project_Mall/target/classes/schema.sql] in 23 ms. 
+2018:11:28 15:28:06.106 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/TopC290/Documents/SONG/Spring/Project/project_Mall/target/classes/data.sql] 
+2018:11:28 15:28:06.149 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/TopC290/Documents/SONG/Spring/Project/project_Mall/target/classes/data.sql] in 43 ms. 
+2018:11:28 15:28:06.559 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72d1ad2e: startup date [Wed Nov 28 15:28:04 KST 2018]; root of context hierarchy 
+2018:11:28 15:28:06.613 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:11:28 15:28:06.616 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:11:28 15:28:06.618 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:11:28 15:28:06.618 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:11:28 15:28:06.621 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:11:28 15:28:06.622 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:11:28 15:28:06.655 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:11:28 15:28:06.655 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:11:28 15:28:06.692 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:11:28 15:28:06.725 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:11:28 15:28:07.050 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:11:28 15:28:07.253 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:11:28 15:28:07.290 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:11:28 15:28:07.295 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.643 seconds (JVM running for 4.503) 
+2018:11:28 15:28:18.808 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:11:28 15:28:18.810 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:11:28 15:28:18.827 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms 
+2018:11:28 15:28:18.903 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:11:28 15:34:42.335 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:11:28 15:34:42.337 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72d1ad2e: startup date [Wed Nov 28 15:28:04 KST 2018]; root of context hierarchy 
+2018:11:28 15:34:42.350 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
