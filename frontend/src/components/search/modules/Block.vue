@@ -1,6 +1,6 @@
 <template lang="html">
 <div>
-  <img src="https://via.placeholder.com/250x300" alt="">
+  <img @click="goDetail" src="https://via.placeholder.com/250x300" alt="">
     <ul>
       <li>{{prop.deliveryCharge}}</li>
       <li>{{prop.name}}</li>
@@ -11,6 +11,12 @@
 
 <script>
 export default {
+  methods: {
+    goDetail() {
+      sessionStorage.setItem("id", prop.id);
+      this.$router.push("/product");
+    }
+  },
   props: ["prop"]
 };
 </script>

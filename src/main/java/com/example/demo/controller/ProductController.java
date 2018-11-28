@@ -11,15 +11,15 @@ import com.example.demo.dto.Product;
 import com.example.demo.repository.ProductMapper;
 
 @RestController
-public class SearchController {
+public class ProductController {
 	
 	@Autowired
 	ProductMapper mapper;
 	
 	
-	@GetMapping("/search")
-	public Object postSearch(@RequestParam(value="kwd") String kwd) {
-		List<Product> result = mapper.searchAll(kwd); 
+	@GetMapping("/product")
+	public Object postSearch(@RequestParam(value="id") int id) {
+		Product result = mapper.searchById(id); 
 		return result;
 	} 
 }

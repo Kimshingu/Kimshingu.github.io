@@ -12,10 +12,14 @@
 		<result property="hitcount" column="HITCOUNT"/>
 		<result property="size" column="SIZE"/>
 		<result property="color" column="COLOR"/>
+		<!-- <result property="seller" column="SELLER"/> -->
 	</resultMap>
 
-	<select id="findAll" parameterType="String" resultMap="resultProductMap">
+	<select id="searchAll" parameterType="String" resultMap="resultProductMap">
 		SELECT * FROM PRODUCT WHERE NAME=#{name}
+	</select>
+	<select id="searchById" parameterType="int" resultMap="resultProductMap">
+		SELECT * FROM PRODUCT WHERE ID=#{id}
 	</select>
 
 

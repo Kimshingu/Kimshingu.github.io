@@ -15,17 +15,18 @@
 
 <script>
 export default {
-  methods:{
+  methods: {
     getResult() {
       var self = this;
-      this.$http.get('/search?kwd='+self.$refs['kwd'].value)
-  .then(function (response) {
-      sessionStorage.setItem('result', JSON.stringify(response.data));
-      self.$router.push('/search');
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+      this.$http
+        .get("/search?kwd=" + self.$refs["kwd"].value)
+        .then(function(response) {
+          sessionStorage.setItem("result", JSON.stringify(response.data));
+          self.$router.push("/search");
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
     }
   }
 };
@@ -39,7 +40,7 @@ export default {
 input:focus {
   outline: none;
 }
-#search{
+#search {
   margin-top: 80px;
 }
 </style>

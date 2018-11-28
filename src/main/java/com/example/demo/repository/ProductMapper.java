@@ -12,7 +12,8 @@ import com.example.demo.dto.Product;
 public interface ProductMapper {
 
 	
-	public List<Product> findAll(String name);
+	public List<Product> searchAll(String name);
+	public Product searchById(int id);
 	public int count(String name);
 
 	public List<Product> findByPageSizeUsingBind(int page, int size);

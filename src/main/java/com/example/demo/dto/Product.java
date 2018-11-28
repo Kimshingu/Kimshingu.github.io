@@ -18,6 +18,6 @@ public class Product {
 	private int hitcount;
 	private String size;
 	private String color;
-	
+//	private String seller;
 	
 }

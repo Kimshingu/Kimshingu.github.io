@@ -9,6 +9,7 @@ import Login from '@/components/login/Login'
 import Signup from '@/components/signup/Signup'
 import NotFound from '@/components/etc/NotFound'
 import Search from '@/components/search/Search'
+import Product from '@/components/product/Product'
 
 
 Vue.prototype.$http = axios;
@@ -37,6 +38,11 @@ export default new Router({
       path: '/search',
       name: 'Search',
       component: Search
+    },
+    {
+      path: '/product',
+      name: 'Product',
+      component: Product
     },
     {
       path: '*',
