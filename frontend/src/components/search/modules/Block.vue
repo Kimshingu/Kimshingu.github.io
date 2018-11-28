@@ -1,6 +1,6 @@
 <template lang="html">
-<div id="target">
-    <img :src="getImage" alt="">
+<div>
+  <img src="https://via.placeholder.com/250x300" alt="">
     <ul>
       <li>{{prop.deliveryCharge}}</li>
       <li>{{prop.name}}</li>
@@ -10,15 +10,9 @@
 </template>
 
 <script>
-
 export default {
-  methods:{
-    getImage() {
-      return '../../etc/product_img/'+prop.image;
-    }
-  },
-  props:['prop']
-}
+  props: ["prop"]
+};
 </script>
 
 <style lang="css">

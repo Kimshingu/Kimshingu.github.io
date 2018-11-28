@@ -40,7 +40,6 @@ export default {
   font-size: 1.5rem;
 }
 
-
 .name {
   color: #3d8e64;
 }
@@ -50,15 +49,14 @@ a:hover {
   text-decoration: none;
   color: black;
 }
-.logout{
+.logout {
 }
-.logout .btn{
-  color:gray;
+.logout .btn {
+  color: gray;
 }
 
-.logout .btn:hover{
+.logout .btn:hover {
   cursor: pointer;
   color: black;
 }
-
 </style>

@@ -8,29 +8,25 @@
 </template>
 
 <script>
-import Result from "./modules/Result"
-import Block from "./modules/Block"
+import Result from "./modules/Result";
+import Block from "./modules/Block";
 export default {
   // methods:{
-  // 
+  //
   // },
-  components:{
+  components: {
     Result: Result,
     Block: Block
   },
   data() {
     return {
-      result : null
-    }
+      result: null
+    };
   },
   created() {
-    this.result = JSON.parse(sessionStorage.getItem('result'));
-  },
-  destroyed() {
-    sessionStorage.removeItem('result');  
+    this.result = JSON.parse(sessionStorage.getItem("result"));
   }
-  
-}
+};
 </script>
 
 <style lang="css">
