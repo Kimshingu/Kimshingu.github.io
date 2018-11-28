@@ -8,6 +8,8 @@ import Main from '@/components/main/Main'
 import Login from '@/components/login/Login'
 import Signup from '@/components/signup/Signup'
 import NotFound from '@/components/etc/NotFound'
+import Search from '@/components/search/Search'
+
 
 Vue.prototype.$http = axios;
 Vue.use(BootstrapVue);
@@ -30,6 +32,11 @@ export default new Router({
       path: '/signup',
       name: 'Signup',
       component: Signup
+    },
+    {
+      path: '/search',
+      name: 'Search',
+      component: Search
     },
     {
       path: '*',

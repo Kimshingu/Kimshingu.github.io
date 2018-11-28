@@ -1,8 +1,8 @@
 <template>
   <div id="search">
-    <form action method="POST">
+    <form @submit.prevent="getResult" method="get">
       <div class="input-group">
-        <input type="text" name="search" class="form-control">
+        <input ref="kwd" type="text" name="kwd" class="form-control">
         <div class="input-group-append">
           <button class="btn" type="submit" id="btn_search">
             <i class="fas fa-search"></i>
@@ -14,7 +14,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    getResult() {
+      var self = this;
+      this.$http.get('/search?kwd='+self.$refs['kwd'].value)
+  .then(function (response) {
+      sessionStorage.setItem('result', JSON.stringify(response.data));
+      self.$router.push('/search');
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+    }
+  }
+};
 </script>
 
 <style scoped>
