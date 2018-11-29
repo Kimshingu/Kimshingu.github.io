@@ -22,11 +22,26 @@ export default {
         .get("/search?kwd=" + self.$refs["kwd"].value)
         .then(function(response) {
           sessionStorage.setItem("result", JSON.stringify(response.data));
-          self.$router.push("/search");
+          self.$router.push("/search?kwd=" + self.$refs["kwd"].value);
         })
         .catch(function(error) {
           console.log(error);
         });
+      // var response = {
+      //   data: {
+      //     color: null,
+      //     deliveryCharge: "무료 배송",
+      //     detail: "보기",
+      //     hitcount: 0,
+      //     id: 1,
+      //     image: "ho1.jpg",
+      //     name: "나이키",
+      //     price: 100000,
+      //     size: ""
+      //   }
+      // };
+      // sessionStorage.setItem("result", JSON.stringify(response));
+      // this.$router.push("/search");
     }
   }
 };

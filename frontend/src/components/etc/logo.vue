@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img @click="goMain" src="./logo.png" alt="">
+    <img @click="goMain" src="./logo.png" alt>
   </div>
 </template>
 

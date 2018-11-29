@@ -17,7 +17,7 @@ export default {
   created() {
     var self = this;
     this.$http
-      .get("/product?id=" + sessionStorage.getItem("id"))
+      .get("/product?id=" + sessionStorage.getItem("p_id"))
       .then(function(response) {
         self.product = response.data;
       })

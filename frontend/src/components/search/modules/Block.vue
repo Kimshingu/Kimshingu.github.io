@@ -1,10 +1,10 @@
 <template lang="html">
 <div>
-  <img @click="goDetail" src="https://via.placeholder.com/250x300" alt="">
+  <img @click="goDetail" src="@/components/etc/250x300.png" alt="">
     <ul>
-      <li>{{prop.deliveryCharge}}</li>
-      <li>{{prop.name}}</li>
-      <li>{{prop.price}}</li>
+      <li>{{data.deliveryCharge}}</li>
+      <li>{{data.name}}</li>
+      <li>{{data.price}}</li>
     </ul>
 </div>
 </template>
@@ -12,12 +12,12 @@
 <script>
 export default {
   methods: {
-    goDetail() {
-      sessionStorage.setItem("id", prop.id);
+    goDetail: function() {
+      sessionStorage.setItem("p_id", this.data.id);
       this.$router.push("/product");
     }
   },
-  props: ["prop"]
+  props: ["data"]
 };
 </script>
 

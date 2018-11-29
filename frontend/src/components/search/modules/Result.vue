@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div>
     검색결과 : {{result.length}} 건
   </div>
 </template>
@@ -8,13 +8,18 @@
 export default {
   data() {
     return {
-      result : null
+      result: null
+    };
+  },
+  watch: {
+    $route(to, from) {
+      this.result = JSON.parse(sessionStorage.getItem("result"));
     }
   },
   created() {
-  this.result = JSON.parse(sessionStorage.getItem('result'));
+    this.result = JSON.parse(sessionStorage.getItem("result"));
   }
-}
+};
 </script>
 
 <style lang="css">
