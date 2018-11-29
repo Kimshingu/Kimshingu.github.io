@@ -3,22 +3,23 @@
 <mapper namespace="com.example.demo.repository.ProductMapper">
 
 	<resultMap type="Product" id="resultProductMap">
-		<result property="id" column="ID"/>
-		<result property="name" column="NAME"/>
-		<result property="price" column="PRICE"/>
-		<result property="deliveryCharge" column="DELIVERY_CHARGE"/>
-		<result property="detail" column="DETAIL"/>
-		<result property="image" column="IMAGE"/>
-		<result property="hitcount" column="HITCOUNT"/>
-		<result property="size" column="SIZE"/>
-		<result property="color" column="COLOR"/>
+		<result property="id" column="ID" />
+		<result property="name" column="NAME" />
+		<result property="price" column="PRICE" />
+		<result property="deliveryCharge" column="DELIVERY_CHARGE" />
+		<result property="detail" column="DETAIL" />
+		<result property="image" column="IMAGE" />
+		<result property="hitcount" column="HITCOUNT" />
+		<result property="size" column="SIZE" />
+		<result property="color" column="COLOR" />
 		<!-- <result property="seller" column="SELLER"/> -->
 	</resultMap>
 
 	<select id="searchAll" parameterType="String" resultMap="resultProductMap">
-		SELECT * FROM PRODUCT WHERE NAME=#{name}
+		SELECT * FROM PRODUCT WHERE NAME LIKE CONCAT('%',#{name},'%')
 	</select>
-	<select id="searchById" parameterType="int" resultMap="resultProductMap">
+	<select id="searchById" parameterType="int"
+		resultMap="resultProductMap">
 		SELECT * FROM PRODUCT WHERE ID=#{id}
 	</select>
 

@@ -3,6 +3,8 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +21,9 @@ public class SearchController {
 	
 	@GetMapping("/search")
 	public Object postSearch(@RequestParam(value="kwd") String kwd) {
+		if(kwd.equals("")) {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
 		List<Product> result = mapper.searchAll(kwd); 
 		return result;
 	} 

@@ -2,8 +2,8 @@
   <div class="">
     <Header></Header>
     <Result></Result>
-    <div v-for="block of result">
-      <Block :prop="block"></Block>
+    <div v-for="block of result" >
+      <Block :data="block"></Block>
     </div>
     <div v-if="result.length==0">
       검색결과가 없습니다.
@@ -16,9 +16,6 @@ import Header from "../main/Header/Header";
 import Result from "./modules/Result";
 import Block from "./modules/Block";
 export default {
-  // methods:{
-  //
-  // },
   components: {
     Result: Result,
     Block: Block,
@@ -28,6 +25,11 @@ export default {
     return {
       result: null
     };
+  },
+  watch: {
+    $route(to, from) {
+      this.result = JSON.parse(sessionStorage.getItem("result"));
+    }
   },
   created() {
     this.result = JSON.parse(sessionStorage.getItem("result"));
