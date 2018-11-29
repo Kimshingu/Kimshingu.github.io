@@ -10,7 +10,7 @@ import Signup from '@/components/signup/Signup'
 import NotFound from '@/components/etc/NotFound'
 import Search from '@/components/search/Search'
 import Product from '@/components/product/Product'
-
+import Cart from '@/components/cart/Cart'
 
 Vue.prototype.$http = axios;
 Vue.use(BootstrapVue);
@@ -45,10 +45,16 @@ export default new Router({
       component: Product
     },
     {
+      path: '/cart',
+      name: 'Cart',
+      component: Cart
+    },
+    {
       path: '*',
       name: 'NotFound',
       component: NotFound
     },
+
     { path: '/signout', redirect: '/' },
     { path: '/home', redirect: '/' }
   ]
