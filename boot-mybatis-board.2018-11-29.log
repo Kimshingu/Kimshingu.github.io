@@ -552,6 +552,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:01.221 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+=======
 2018:11:29 15:36:43.255 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 2723 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
 2018:11:29 15:36:43.269 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
 2018:11:29 15:36:43.554 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 15:36:43 KST 2018]; root of context hierarchy 
@@ -998,23 +1001,35 @@ Verify the connector's configuration, identify and stop any process that's liste
  
 2018:11:29 16:46:39.034 WARN  --- [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "null"] 
 2018:11:29 16:46:51.961 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:08.121 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+=======
 2018:11:29 16:46:55.031 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:09.770 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+=======
 2018:11:29 16:46:55.173 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:42.493 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+=======
 2018:11:29 16:46:55.311 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
@@ -1037,6 +1052,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 16:47:06.355 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1045,6 +1061,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:44.266 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+=======
 2018:11:29 16:47:07.366 WARN  --- [http-nio-8080-exec-10] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "null"] 
 2018:11:29 16:47:56.445 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 16:47:56.447 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 16:46:29 KST 2018]; root of context hierarchy 
@@ -1087,6 +1106,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:29 16:48:12.391 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 16:48:12.406 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
 2018:11:29 16:48:12.467 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1095,6 +1115,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:45.739 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+=======
 2018:11:29 16:48:14.288 WARN  --- [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "null"] 
 2018:11:29 16:49:57.217 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 16:49:57.219 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 16:48:02 KST 2018]; root of context hierarchy 
@@ -1137,6 +1160,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:29 16:50:21.817 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 16:50:21.833 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms 
 2018:11:29 16:50:21.897 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1145,6 +1169,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:46.194 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+=======
 2018:11:29 16:50:23.136 WARN  --- [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "null"] 
 2018:11:29 16:51:09.056 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 16:51:09.057 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 16:50:03 KST 2018]; root of context hierarchy 
@@ -1187,6 +1214,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:29 16:52:05.536 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 16:52:05.552 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms 
 2018:11:29 16:52:11.852 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1195,6 +1223,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:46.361 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+=======
 2018:11:29 16:53:57.696 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 16:53:57.699 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 16:52:00 KST 2018]; root of context hierarchy 
 2018:11:29 16:53:57.701 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
@@ -1236,6 +1267,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:29 16:54:25.072 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 16:54:25.089 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms 
 2018:11:29 16:54:28.887 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1244,6 +1276,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:46.515 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+=======
 2018:11:29 16:54:29.857 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -1299,6 +1334,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:29 16:58:16.738 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 16:58:16.754 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms 
 2018:11:29 16:58:21.208 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1307,6 +1343,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:46.674 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+=======
 2018:11:29 16:58:22.207 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -1355,6 +1394,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018:11:29 17:07:53.496 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 17:07:53.510 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
 2018:11:29 17:07:56.256 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1363,6 +1403,9 @@ Verify the connector's configuration, identify and stop any process that's liste
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:47.037 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+=======
 2018:11:29 17:07:57.167 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -1431,6 +1474,7 @@ java.lang.NumberFormatException: For input string: "100,000"
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2018:11:29 17:08:15.917 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1439,6 +1483,9 @@ java.lang.NumberFormatException: For input string: "100,000"
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:50.279 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+=======
 2018:11:29 17:08:18.225 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -1547,6 +1594,7 @@ java.lang.NumberFormatException: For input string: "100,000"
 2018:11:29 17:09:52.332 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 17:09:52.348 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms 
 2018:11:29 17:09:59.990 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1555,6 +1603,9 @@ java.lang.NumberFormatException: For input string: "100,000"
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:50.741 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+=======
 2018:11:29 17:10:01.336 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -1663,6 +1714,7 @@ java.lang.NumberFormatException: For input string: "100,000"
 2018:11:29 17:19:36.269 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 17:19:36.292 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms 
 2018:11:29 17:19:42.179 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1671,6 +1723,9 @@ java.lang.NumberFormatException: For input string: "100,000"
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:51.094 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+=======
 2018:11:29 17:19:43.680 ERROR --- [http-nio-8080-exec-3] jdbc.sqlonly :  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
 10. SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=?
  
@@ -1960,6 +2015,7 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 2018:11:29 17:21:45.806 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 17:21:45.823 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms 
 2018:11:29 17:21:49.111 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -1968,6 +2024,9 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:53.615 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+=======
 2018:11:29 17:21:49.748 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -2016,6 +2075,7 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 2018:11:29 17:26:47.483 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 17:26:47.496 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms 
 2018:11:29 17:26:57.078 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -2024,6 +2084,21 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:55.846 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|------|------|-------|----------------|---------|-----|------|
+|id |name |price |image |detail |delivery_charge |hitcount |size |color |
+|---|-----|------|------|-------|----------------|---------|-----|------|
+|---|-----|------|------|-------|----------------|---------|-----|------|
+ 
+2018:11:29 14:42:57.325 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|-----|------|------|-------|----------------|---------|-----|------|
+|id |name |price |image |detail |delivery_charge |hitcount |size |color |
+|---|-----|------|------|-------|----------------|---------|-----|------|
+|---|-----|------|------|-------|----------------|---------|-----|------|
+ 
+2018:11:29 14:42:57.507 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+=======
 2018:11:29 17:26:57.791 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
 |---|-----|-------|--------|-------|----------------|---------|-----|-------|
 |id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -2424,11 +2499,15 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 17:56:45.186 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:57.752 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+=======
 2018:11:29 17:58:53.610 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
@@ -2877,11 +2956,15 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |---|-----|------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 18:13:43.800 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:42:57.932 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+=======
 2018:11:29 18:16:57.787 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 18:16:57.789 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 18:13:12 KST 2018]; root of context hierarchy 
 2018:11:29 18:16:57.792 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
@@ -2932,11 +3015,15 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 18:19:09.261 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:03.439 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+=======
 2018:11:29 18:19:11.707 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 18:19:11.707 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 18:16:59 KST 2018]; root of context hierarchy 
 2018:11:29 18:19:11.709 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
@@ -2978,6 +3065,7 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 2018:11:29 18:19:26.362 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:11:29 18:19:26.378 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms 
 2018:11:29 18:19:31.014 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
@@ -2986,12 +3074,19 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:05.293 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+=======
 2018:11:29 18:19:32.497 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:06.163 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+=======
 2018:11:29 18:19:56.464 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
 |id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
@@ -3029,11 +3124,15 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 18:20:12.979 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:06.388 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+=======
 2018:11:29 18:20:17.534 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
 |---|------|-------|--------|-------|----------------|---------|-----|-------|
 |id |name  |price  |image   |detail |delivery_charge |hitcount |size |color  |
@@ -3044,17 +3143,25 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |---|------|-------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 18:20:23.217 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:06.536 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+=======
 2018:11:29 18:20:23.449 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:06.719 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+=======
 2018:11:29 18:22:17.313 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 18:22:17.314 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 18:19:19 KST 2018]; root of context hierarchy 
 2018:11:29 18:22:17.316 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
@@ -3105,29 +3212,47 @@ SELECT NAME, FORMAT(PRICE,0), FORMAT(DELIVERY_CHARGE,0) WHERE ID=? [90022-197]
 |---|-----|--------|--------|-------|----------------|---------|-----|-------|
  
 2018:11:29 18:22:33.777 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:06.873 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+=======
 2018:11:29 18:22:39.576 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:07.030 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+=======
 2018:11:29 18:22:40.078 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:43:07.193 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+=======
 2018:11:29 18:22:40.257 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |id |name |price |image |detail |delivery_charge |hitcount |size |color |
 |---|-----|------|------|-------|----------------|---------|-----|------|
 |---|-----|------|------|-------|----------------|---------|-----|------|
  
+<<<<<<< HEAD
+2018:11:29 14:54:37.384 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:11:29 14:54:37.384 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f6ee6e4: startup date [Thu Nov 29 14:34:54 KST 2018]; root of context hierarchy 
+2018:11:29 14:54:37.384 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+=======
 2018:11:29 18:23:10.104 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 18:23:10.104 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 18:22:19 KST 2018]; root of context hierarchy 
 2018:11:29 18:23:10.106 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
@@ -11716,3 +11841,4 @@ org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps
 2018:11:29 18:57:18.023 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:11:29 18:57:18.024 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16d04d3d: startup date [Thu Nov 29 18:56:53 KST 2018]; root of context hierarchy 
 2018:11:29 18:57:18.026 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+>>>>>>> a944904924871f462089d6a26bcb012b184670d1
