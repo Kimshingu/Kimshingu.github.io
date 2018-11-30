@@ -39,6 +39,9 @@ export default {
       ]
     };
   },
+  methods:{
+    
+  },
   props: ["prop"]
 };
 </script>
