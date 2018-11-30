@@ -6,7 +6,6 @@
     </cartBody>
     <cartFooter>
     </cartFooter>
-
   </div>
 
 
@@ -22,10 +21,8 @@ export default {
     cartHeader: header,
     cartBody: body,
     cartFooter: footer
-
   }
-}
-console.log('123');
+};
 </script>
 
 <style lang="css">
