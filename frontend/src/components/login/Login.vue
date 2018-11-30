@@ -1,7 +1,6 @@
 <template>
-<div>
-   <form @submit.prevent="doPost" method="POST">
-
+  <div>
+    <form @submit.prevent="doPost" method="POST">
       <!-- 로고 -->
       <div class="row">
         <div class="col-5"></div>
@@ -17,14 +16,23 @@
         <div class="col-6">
           <div class="input-group">
             <div class="input-group-prepend">
-              <label class="btn btn-outline-secondary" id="button-addon1" for="mailbox"><i class="far fa-envelope"></i></label>
+              <label class="btn btn-outline-secondary" id="button-addon1" for="mailbox">
+                <i class="far fa-envelope"></i>
+              </label>
             </div>
-            <input ref="email" id="mailbox" type="email" name="email" class="form-control" placeholder="아이디(E-Mail)" required>
+            <input
+              ref="email"
+              id="mailbox"
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="아이디(E-Mail)"
+              required
+            >
           </div>
         </div>
         <div class="col-3"></div>
       </div>
-
 
       <!-- 비밀번호 -->
       <div class="row">
@@ -32,14 +40,23 @@
         <div class="col-6">
           <div class="input-group">
             <div class="input-group-prepend">
-              <label class="btn btn-outline-secondary" id="button-addon1" for="pwbox"><i class="fas fa-lock"></i></label>
+              <label class="btn btn-outline-secondary" id="button-addon1" for="pwbox">
+                <i class="fas fa-lock"></i>
+              </label>
             </div>
-            <input ref="password" id="pwbox" type="password" name="password" class="form-control" placeholder="비밀번호" required>
+            <input
+              ref="password"
+              id="pwbox"
+              type="password"
+              name="password"
+              class="form-control"
+              placeholder="비밀번호"
+              required
+            >
           </div>
         </div>
         <div class="col-3"></div>
       </div>
-
 
       <!-- 로그인 버튼 -->
       <div class="row">
@@ -49,7 +66,6 @@
         </div>
         <div class="col-3"></div>
       </div>
-
 
       <!-- 폼 끝 -->
     </form>
@@ -65,14 +81,13 @@
     <div class="row">
       <div class="col-3"></div>
       <div class="col-6">
-          <button @click="clickSignup" class="btn btn-color2 btn-block">회원가입</button>
+        <button @click="clickSignup" class="btn btn-color2 btn-block">회원가입</button>
       </div>
       <div class="col-3"></div>
     </div>
 
     <!-- 컨테이너 끝 -->
   </div>
-
 </template>
 
 <script>
@@ -90,10 +105,7 @@ export default {
           password: self.$refs["password"].value
         })
         .then(function(response) {
-          sessionStorage.setItem(
-            "user",
-            JSON.stringify({ name: response.data.name })
-          );
+          sessionStorage.setItem("user", JSON.stringify(response.data));
           self.$router.push("/");
         })
         .catch(function(error) {

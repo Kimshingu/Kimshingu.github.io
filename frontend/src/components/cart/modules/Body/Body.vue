@@ -4,26 +4,28 @@
       <thead>
         <tr>
           <th>상품명</th>
-          <th>상품금액</th>
+          <th>상품가격</th>
           <th>배송비</th>
         </tr>
       </thead>
-      <tbody v-for="i in 3">
+      <tbody>
+        <div v-for="i of length">
         <tr>
-          <td> <img src="https://via.placeholder.com/50x50" class="thumbnail"> 나이키1</td>
-          <td rowspan="2">40000</td>
-          <td rowspan="2">2500</td>
+          <td> <img src="https://via.placeholder.com/50x50" class="thumbnail"> {{prop.product[i].name}}</td>
+          <td rowspan="2">{{prop.product[i].price}}</td>
+          <td rowspan="2">{{prop.product[i].deliveryCharge}}</td>
         </tr>
         <tr>
-          <td>색상: Black| 사이즈: L| 수량:
+          <td>색상: {{prop.cart[i].cart_color}}| 사이즈: {{prop.cart[i].cart_size}}| 수량:
           <span style="float:right">
-          <input name="cartCount" class="cartCount" type="number" value="2">
-          <button>+</button>
-          <button>-</button>
-          <button>x</button>
+          <input name="cartCount" class="cartCount" type="number" v-model="prop.cart[i].cart_count">
+          <button class="btn btn-secondary">+</button>
+          <button class="btn btn-secondary">-</button>
+          <button class="btn btn-secondary">x</button>
           </span>
           </td>
         </tr>
+        </div>
       </tbody>
     </table>
 </div>
@@ -31,14 +33,26 @@
 
 <script>
 export default {
-}
+  props: ["prop"],
+  computed: {
+    length: function() {
+      console.log("자식");
+
+      let count = 0;
+      for (const i of this.prop) {
+        count++;
+      }
+      return count;
+    }
+  }
+};
 </script>
 
 <style lang="css">
-  .thumbnail {
-    margin-right: 1em;
-  }
-  .cartCount {
-    width: 50px;
-  }
+.thumbnail {
+  margin-right: 1em;
+}
+.cartCount {
+  width: 50px;
+}
 </style>

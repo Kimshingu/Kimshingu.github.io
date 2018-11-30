@@ -11,6 +11,7 @@ import NotFound from '@/components/etc/NotFound'
 import Search from '@/components/search/Search'
 import Product from '@/components/product/Product'
 import Cart from '@/components/cart/Cart'
+import Order from '@/components/order/Order'
 
 Vue.prototype.$http = axios;
 Vue.use(BootstrapVue);
@@ -48,6 +49,11 @@ export default new Router({
       path: '/cart',
       name: 'Cart',
       component: Cart
+    },
+    {
+      path: '/order',
+      name: 'Order',
+      component: Order
     },
     {
       path: '*',

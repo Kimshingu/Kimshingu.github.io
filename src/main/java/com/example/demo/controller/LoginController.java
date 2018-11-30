@@ -27,7 +27,7 @@ public class LoginController {
 	
 	
 	@PostMapping("/login")
-	public Object postLogin(@RequestBody User user, HttpSession session, Model model) {
+	public Object postLogin(@RequestBody User user) {
 		if (loginservice.loginAuthenticate(user).equals("success")) {
 			User passUser = new User(user.getEmail(), user.getPassword(), mapper.selectOne(user.getEmail()).getName(),
 					mapper.selectOne(user.getEmail()).getPhone(), mapper.selectOne(user.getEmail()).getAddress());

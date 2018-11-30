@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.CartMapper">
+
+	<resultMap type="Cart" id="resultCartMap">
+		<result property="user_email" column="EMAIL" />
+		<result property="product_id" column="ID" />
+		<result property="cart_size" column="SIZE" />
+		<result property="cart_color" column="COLOR" />
+		<result property="cart_count" column="COUNT" />
+	</resultMap>
+
+<!-- 	<update id="update" parameterType="User">
+		UPDATE USER SET PASSWORD=#{password} WHERE EMAIL = #{email}
+	</update> -->
+
+	<insert id="insert" parameterType="Cart">
+		INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(#{user_email}, #{product_id}, #{cart_size}, #{cart_color}, #{cart_count})
+	</insert>
+<!-- 
+	<delete id="delete" parameterType="String">
+		DELETE FROM USER WHERE EMAIL = #{email}
+	</delete> -->
+	
+	
+	<select id="selectAll" parameterType="String" resultMap="resultCartMap">
+	SELECT * FROM CART WHERE EMAIL = #{user_email}
+	</select>
+
+
+</mapper>
