@@ -31,7 +31,6 @@ export default {
     this.$http
       .get("/cart?id=" + JSON.parse(sessionStorage.getItem("user")).email)
       .then(function(response) {
-        console.log("부모");
         self.data = response.data;
       })
       .catch(function(error) {

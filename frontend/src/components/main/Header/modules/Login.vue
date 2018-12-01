@@ -5,7 +5,10 @@
         <router-link to="/login">로그인</router-link>
       </div>
       <div v-if="user" class="logout">
-        <span class="name">{{user.name}}</span> 님
+        <span class="name">{{user.name}}</span> 님 &nbsp;
+        <router-link to="/cart">
+          <i class="fas fa-shopping-cart"></i>장바구니
+        </router-link>
         <br>
         <div class="logout btn" @click="logout">로그아웃</div>
       </div>

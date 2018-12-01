@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,19 +34,19 @@ public class CartController {
 	
 	@GetMapping("/cart")
 	public Object getCart(@RequestParam(value="id") String user_email) {
-		HashMap<String, Object> map = new HashMap<String, Object>();
+		Map<String,Object> map = new HashMap<>();
+		List<Object> list = new ArrayList<>();
 		map.put("cart", C_mapper.selectAll(user_email));
-		List<Product> list = new ArrayList<>();
+		
 		
 		for (Cart cart : C_mapper.selectAll(user_email)) {
 			int id = cart.getProduct_id();
-			list.add(P_mapper.searchById(id));
+			Product product = P_mapper.searchById(id);
+			list.add(product);
 		}
-		map.put("product", list);
 		
+		map.put("product", list);
 		
 		return map;
 	}
-	
-	
 }
