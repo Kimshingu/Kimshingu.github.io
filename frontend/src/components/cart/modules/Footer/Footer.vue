@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div v-if="prop">
     <table class="table">
       <thead>
         <tr>
@@ -10,9 +10,9 @@
       </thead>
       <tbody>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>{{totalPrice}} 원</td>
+          <td>무료배송</td>
+          <td>{{totalPrice}} 원</td>
         </tr>
       </tbody>
     </table>
@@ -21,7 +21,26 @@
 
 <script>
 export default {
-}
+  props: ["prop"],
+  computed: {
+    totalPrice: function() {
+      let price = 0;
+      for (let index = 0; index < this.prop.cart.length; index++) {
+        const cart = this.prop.cart[index];
+        const product = this.prop.product[index];
+        price += Number(product.price.split(",").join("")) * cart.cart_count;
+      }
+      return this.localize(price);
+    },
+    totalDelivery: function() {},
+    totalResult: function() {}
+  },
+  methods: {
+    localize(money) {
+      return Number(money).toLocaleString("en");
+    }
+  }
+};
 </script>
 
 <style lang="css">

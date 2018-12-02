@@ -4,21 +4,13 @@
     <li>{{localePrice}} 원</li>
     <li>{{prop.deliveryCharge}}</li>
     <!-- <li>{{prop.seller}}</li> -->
-    <form method="post" class="form-group">
-      <b-form-select v-model="selectedSize" value="null" id="size" :options="sizeOp" class="mb-3"/>
-      <b-form-select
-        v-model="selectedColor"
-        value="null"
-        id="color"
-        :options="colorOp"
-        class="mb-3"
-      />
+    <b-form-select v-model="selectedSize" value="null" id="size" :options="sizeOp" class="mb-3"/>
+    <b-form-select v-model="selectedColor" value="null" id="color" :options="colorOp" class="mb-3"/>
 
-      <b-form-input v-model="selectedCount" type="number"></b-form-input>
-      <br>
-      <button @click="goCart" type="button" class="btn btn-secondary">장바구니에 담기</button>
-      <button @click="goOrder" type="button" class="btn btn-primary">바로구매</button>
-    </form>
+    <b-form-input v-model="selectedCount" type="number" min="1" max="20"></b-form-input>
+    <br>
+    <button @click="goCart" type="button" class="btn btn-secondary">장바구니에 담기</button>
+    <button @click="goOrder" type="button" class="btn btn-primary">바로구매</button>
   </div>
 </template>
 

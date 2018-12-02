@@ -120,10 +120,6 @@ export default {
 </script>
 
 <style>
-body {
-  margin-top: 50px;
-}
-
 .logo {
   margin: 10px;
   font-size: 2em;

@@ -30,6 +30,5 @@ export default {
 <style>
 #header {
   background-color: #dae5de;
-  margin-top: 40px;
 }
 </style>

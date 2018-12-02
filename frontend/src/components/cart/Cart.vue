@@ -4,7 +4,7 @@
 
     <cartBody :prop="data"></cartBody>
 
-    <cartFooter></cartFooter>
+    <cartFooter :prop="data"></cartFooter>
   </div>
 
 

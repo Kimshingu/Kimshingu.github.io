@@ -225,27 +225,24 @@ export default {
           console.log(error);
         });
     },
-    isValidAccount(){
+    isValidAccount() {
       var self = this;
-      this.$http.get('/signup?email='+this.$refs["email"].value)
-  .then(function (response) {
-    self.$refs["email"].className = "form-control is-valid";
-    self.$refs["mlabel"].className = "btn btn-outline-success";
-  })
-  .catch(function (error) {
-    self.$refs["email"].className = "form-control is-invalid";
-    self.$refs["mlabel"].className = "btn btn-outline-danger";
-  });
+      this.$http
+        .get("/signup?email=" + this.$refs["email"].value)
+        .then(function(response) {
+          self.$refs["email"].className = "form-control is-valid";
+          self.$refs["mlabel"].className = "btn btn-outline-success";
+        })
+        .catch(function(error) {
+          self.$refs["email"].className = "form-control is-invalid";
+          self.$refs["mlabel"].className = "btn btn-outline-danger";
+        });
     }
   }
 };
 </script>
 
 <style>
-body {
-  margin-top: 50px;
-}
-
 .logo {
   margin: 10px;
   font-size: 2em;

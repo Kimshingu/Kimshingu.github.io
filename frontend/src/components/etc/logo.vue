@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-center">
     <img @click="goMain" src="./logo.png" alt>
   </div>
 </template>

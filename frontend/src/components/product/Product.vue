@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="product">
     <Detail :prop="product"></Detail>
   </div>
 </template>
@@ -29,4 +29,7 @@ export default {
 </script>
 
 <style>
+#product {
+  margin-top: 30px;
+}
 </style>
