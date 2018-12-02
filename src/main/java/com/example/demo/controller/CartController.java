@@ -24,9 +24,6 @@ public class CartController {
 	@Autowired
 	public ProductMapper P_mapper;
 	
-	
-	
-	
 	@PostMapping("/cart")
 	public Object postCart(@RequestBody Cart cart) {
 		return C_mapper.insert(cart);

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="prop">
     <h3>{{prop.name}}</h3>
     <li>{{localePrice}} 원</li>
     <li>{{prop.deliveryCharge}}</li>

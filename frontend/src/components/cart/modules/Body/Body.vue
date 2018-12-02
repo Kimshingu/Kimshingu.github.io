@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="cartBody" >
+  <div v-if="prop" id="cartBody" >
 <table class="table">
   <thead>
     <tr>
@@ -10,14 +10,13 @@
   </thead>
   <tbody>
     <tr v-for="(i,index) in prop.cart" :key="index">
-      <td> <img src="https://via.placeholder.com/50x50" class="thumbnail"> {{prop.product[index].name}}<br> 색상: {{i.cart_color}}| 사이즈: {{i.cart_size}}| 수량:
+      <td> <img src="https://via.placeholder.com/50x50" class="thumbnail"> {{prop.product[index].name}}<br> 색상: {{i.cart_color}} | 사이즈: {{i.cart_size}} | 수량:
         <input name="cartCount" class="cartCount" type="number" v-model="i.cart_count"></td>
-      <td>{{prop.product[index].price}}</td>
+      <td>{{prop.product[index].price}} 원</td>
       <td>{{prop.product[index].deliveryCharge}} &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-secondary">&times;</button></td>
     </tr>
   </tbody>
 </table>
-
 </div>
 </template>
 

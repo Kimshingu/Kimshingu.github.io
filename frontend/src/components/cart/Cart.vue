@@ -31,11 +31,20 @@ export default {
     this.$http
       .get("/cart?id=" + JSON.parse(sessionStorage.getItem("user")).email)
       .then(function(response) {
+        for (let product of response.data.product) {
+          product.price = self.localePrice(product.price);
+        }
+
         self.data = response.data;
       })
       .catch(function(error) {
         console.log(error);
       });
+  },
+  methods: {
+    localePrice(price) {
+      return Number(price).toLocaleString("en");
+    }
   }
 };
 </script>

@@ -1,0 +1,1809 @@
+2018:12:02 10:40:35.441 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 2929 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 10:40:35.459 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 10:40:35.699 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:40:35 KST 2018]; root of context hierarchy 
+2018:12:02 10:40:36.761 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 10:40:36.782 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 10:40:36.783 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 10:40:36.858 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 10:40:36.859 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1160 ms 
+2018:12:02 10:40:36.986 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 10:40:36.988 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 10:40:36.990 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 10:40:36.991 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 10:40:36.992 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 10:40:36.992 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 10:40:37.374 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 10:40:37.400 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 25 ms. 
+2018:12:02 10:40:37.403 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 10:40:37.423 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 19 ms. 
+2018:12:02 10:40:37.847 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:40:35 KST 2018]; root of context hierarchy 
+2018:12:02 10:40:37.896 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 10:40:37.897 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 10:40:37.898 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 10:40:37.899 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 10:40:37.900 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 10:40:37.901 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 10:40:37.902 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 10:40:37.902 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 10:40:37.905 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 10:40:37.907 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 10:40:37.934 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:40:37.934 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:40:37.965 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:40:37.997 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 10:40:38.314 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 10:40:38.495 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 10:40:38.538 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 10:40:38.543 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.456 seconds (JVM running for 4.169) 
+2018:12:02 10:40:43.011 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 10:40:43.012 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 10:40:43.039 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms 
+2018:12:02 10:40:50.632 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|------|---|-----|------|------|
+|email |id |size |color |count |
+|------|---|-----|------|------|
+|------|---|-----|------|------|
+ 
+2018:12:02 10:40:50.636 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|------|---|-----|------|------|
+|email |id |size |color |count |
+|------|---|-----|------|------|
+|------|---|-----|------|------|
+ 
+2018:12:02 10:40:55.498 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:40:56.530 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:41:00.233 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |white |2     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:41:00.239 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |white |2     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:41:00.245 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:41:11.137 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:44:26.197 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 10:44:26.198 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:40:35 KST 2018]; root of context hierarchy 
+2018:12:02 10:44:26.204 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 10:44:28.618 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 2999 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 10:44:28.660 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 10:44:28.963 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:44:28 KST 2018]; root of context hierarchy 
+2018:12:02 10:44:30.045 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 10:44:30.066 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 10:44:30.067 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 10:44:30.144 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 10:44:30.144 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1181 ms 
+2018:12:02 10:44:30.315 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 10:44:30.316 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 10:44:30.320 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 10:44:30.321 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 10:44:30.322 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 10:44:30.322 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 10:44:30.705 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 10:44:30.729 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 23 ms. 
+2018:12:02 10:44:30.731 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 10:44:30.752 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 20 ms. 
+2018:12:02 10:44:31.195 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:44:28 KST 2018]; root of context hierarchy 
+2018:12:02 10:44:31.242 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 10:44:31.243 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 10:44:31.244 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 10:44:31.244 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 10:44:31.245 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 10:44:31.246 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 10:44:31.247 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 10:44:31.248 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 10:44:31.250 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 10:44:31.250 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 10:44:31.275 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:44:31.275 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:44:31.307 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:44:31.340 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 10:44:31.662 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 10:44:31.854 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 10:44:31.898 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 10:44:31.902 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.839 seconds (JVM running for 4.826) 
+2018:12:02 10:44:37.170 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 10:44:37.171 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 10:44:37.188 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms 
+2018:12:02 10:44:45.617 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:44:51.566 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:44:56.906 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |8     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:44:56.909 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |8     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:44:56.913 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:50:13.258 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 10:50:13.262 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:44:28 KST 2018]; root of context hierarchy 
+2018:12:02 10:50:13.271 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 10:50:15.446 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3056 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 10:50:15.467 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 10:50:15.767 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:50:15 KST 2018]; root of context hierarchy 
+2018:12:02 10:50:17.091 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 10:50:17.110 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 10:50:17.110 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 10:50:17.177 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 10:50:17.178 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1411 ms 
+2018:12:02 10:50:17.342 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 10:50:17.344 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 10:50:17.348 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 10:50:17.349 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 10:50:17.350 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 10:50:17.350 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 10:50:17.770 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 10:50:17.800 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 29 ms. 
+2018:12:02 10:50:17.803 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 10:50:17.827 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 24 ms. 
+2018:12:02 10:50:18.503 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:50:15 KST 2018]; root of context hierarchy 
+2018:12:02 10:50:18.568 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 10:50:18.569 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 10:50:18.570 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 10:50:18.571 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 10:50:18.572 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 10:50:18.573 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 10:50:18.574 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 10:50:18.575 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 10:50:18.579 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 10:50:18.582 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 10:50:18.615 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:50:18.617 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:50:18.656 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:50:18.687 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 10:50:19.196 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 10:50:19.396 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 10:50:19.441 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 10:50:19.447 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 4.474 seconds (JVM running for 5.357) 
+2018:12:02 10:51:40.123 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 10:51:40.127 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:50:15 KST 2018]; root of context hierarchy 
+2018:12:02 10:51:40.129 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 10:51:41.789 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3057 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 10:51:41.799 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 10:51:42.014 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:51:42 KST 2018]; root of context hierarchy 
+2018:12:02 10:51:43.062 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 10:51:43.079 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 10:51:43.080 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 10:51:43.140 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 10:51:43.141 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1127 ms 
+2018:12:02 10:51:43.261 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 10:51:43.263 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 10:51:43.266 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 10:51:43.267 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 10:51:43.268 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 10:51:43.269 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 10:51:43.591 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 10:51:43.611 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 20 ms. 
+2018:12:02 10:51:43.613 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 10:51:43.630 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 16 ms. 
+2018:12:02 10:51:43.957 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:51:42 KST 2018]; root of context hierarchy 
+2018:12:02 10:51:44.005 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 10:51:44.006 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 10:51:44.007 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 10:51:44.007 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 10:51:44.009 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 10:51:44.011 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 10:51:44.012 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 10:51:44.013 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 10:51:44.016 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 10:51:44.017 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 10:51:44.064 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:51:44.065 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:51:44.182 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:51:44.225 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 10:51:44.751 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 10:51:44.996 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 10:51:45.041 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 10:51:45.046 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.551 seconds (JVM running for 4.137) 
+2018:12:02 10:51:46.478 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 10:51:46.478 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 10:51:46.496 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms 
+2018:12:02 10:51:50.524 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:51:51.537 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:51:55.000 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |5     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:51:55.004 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |5     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:51:55.008 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:52:53.210 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:52:55.429 ERROR --- [http-nio-8080-exec-9] jdbc.sqlonly :  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+10. INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES('test@test.com', 1, NULL, NULL, 0)
+ 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:55.433 INFO  --- [http-nio-8080-exec-9] o.s.b.f.xml.XmlBeanDefinitionReader : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml] 
+2018:12:02 10:52:55.483 ERROR --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+### The error may involve com.example.demo.repository.CartMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?)
+### Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+; SQL []; NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]; nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]] with root cause 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:58.174 ERROR --- [http-nio-8080-exec-10] jdbc.sqlonly :  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+10. INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES('test@test.com', 1, NULL, 'black', 5)
+ 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:58.175 ERROR --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+### The error may involve com.example.demo.repository.CartMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?)
+### Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+; SQL []; NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]; nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]] with root cause 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:58.461 ERROR --- [http-nio-8080-exec-1] jdbc.sqlonly :  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+10. INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES('test@test.com', 1, NULL, 'black', 5)
+ 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:58.463 ERROR --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+### The error may involve com.example.demo.repository.CartMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?)
+### Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+; SQL []; NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]; nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]] with root cause 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:58.599 ERROR --- [http-nio-8080-exec-2] jdbc.sqlonly :  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+10. INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES('test@test.com', 1, NULL, 'black', 5)
+ 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:52:58.601 ERROR --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+### The error may involve com.example.demo.repository.CartMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?)
+### Cause: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+; SQL []; NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]; nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]] with root cause 
+org.h2.jdbc.JdbcSQLException: NULL not allowed for column "SIZE"; SQL statement:
+INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:249)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy80.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy64.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at com.example.demo.controller.CartController.postCart(CartController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018:12:02 10:53:00.595 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |5     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:53:00.599 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |5     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:53:00.607 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:54:54.955 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 10:54:54.957 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:51:42 KST 2018]; root of context hierarchy 
+2018:12:02 10:54:54.960 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 10:54:57.091 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3095 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 10:54:57.108 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 10:54:57.403 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:54:57 KST 2018]; root of context hierarchy 
+2018:12:02 10:54:58.564 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 10:54:58.601 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 10:54:58.602 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 10:54:58.711 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 10:54:58.711 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1308 ms 
+2018:12:02 10:54:58.952 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 10:54:58.954 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 10:54:58.958 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 10:54:58.958 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 10:54:58.959 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 10:54:58.959 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 10:54:59.351 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 10:54:59.382 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 29 ms. 
+2018:12:02 10:54:59.386 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 10:54:59.431 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 44 ms. 
+2018:12:02 10:54:59.948 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:54:57 KST 2018]; root of context hierarchy 
+2018:12:02 10:54:59.998 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 10:54:59.999 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 10:54:59.999 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 10:55:00.000 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 10:55:00.001 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 10:55:00.002 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 10:55:00.004 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 10:55:00.005 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 10:55:00.010 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 10:55:00.011 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 10:55:00.043 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:55:00.043 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:55:00.080 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:55:00.114 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 10:55:00.737 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 10:55:01.139 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 10:55:01.195 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 10:55:01.204 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 4.493 seconds (JVM running for 5.494) 
+2018:12:02 10:55:05.093 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 10:55:05.094 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 10:55:05.124 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms 
+2018:12:02 10:55:12.222 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:55:13.214 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:55:16.676 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |2     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:55:16.681 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |2     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:55:16.686 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:59:20.112 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 10:59:20.115 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:54:57 KST 2018]; root of context hierarchy 
+2018:12:02 10:59:20.118 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 10:59:21.983 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3134 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 10:59:21.999 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 10:59:22.274 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:59:22 KST 2018]; root of context hierarchy 
+2018:12:02 10:59:23.443 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 10:59:23.463 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 10:59:23.463 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 10:59:23.540 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 10:59:23.541 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1267 ms 
+2018:12:02 10:59:23.699 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 10:59:23.701 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 10:59:23.704 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 10:59:23.705 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 10:59:23.706 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 10:59:23.706 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 10:59:24.073 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 10:59:24.100 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 26 ms. 
+2018:12:02 10:59:24.103 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 10:59:24.127 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 24 ms. 
+2018:12:02 10:59:24.581 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:59:22 KST 2018]; root of context hierarchy 
+2018:12:02 10:59:24.641 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 10:59:24.642 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 10:59:24.644 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 10:59:24.646 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 10:59:24.648 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 10:59:24.650 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 10:59:24.655 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 10:59:24.656 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 10:59:24.659 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 10:59:24.660 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 10:59:24.688 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:59:24.689 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:59:24.728 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 10:59:24.761 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 10:59:25.082 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 10:59:25.288 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 10:59:25.365 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 10:59:25.374 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.766 seconds (JVM running for 4.496) 
+2018:12:02 10:59:28.990 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 10:59:28.991 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 10:59:29.008 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms 
+2018:12:02 10:59:34.664 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|------|---|-----|------|------|
+|email |id |size |color |count |
+|------|---|-----|------|------|
+|------|---|-----|------|------|
+ 
+2018:12:02 10:59:34.670 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|------|---|-----|------|------|
+|email |id |size |color |count |
+|------|---|-----|------|------|
+|------|---|-----|------|------|
+ 
+2018:12:02 10:59:37.748 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:59:38.638 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 10:59:42.922 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:59:42.930 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 10:59:42.937 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:03:23.041 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:03:27.002 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:03:27.186 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:03:27.336 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:03:27.496 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:03:27.633 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:06:46.261 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:06:54.671 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:07:02.668 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:07:07.325 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|------|-------|--------|-------|----------------|---------|-----|-------|
+|id |name  |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|------|-------|--------|-------|----------------|---------|-----|-------|
+|13 |에어프라이 |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|14 |에어프라이 |3211   |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|15 |에어프라이 |65156  |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|------|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:07:10.130 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:07:12.803 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|-----|------|------|-------|----------------|---------|-----|------|
+|id |name |price |image |detail |delivery_charge |hitcount |size |color |
+|---|-----|------|------|-------|----------------|---------|-----|------|
+|---|-----|------|------|-------|----------------|---------|-----|------|
+ 
+2018:12:02 11:07:15.842 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:07:15.844 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:07:15.847 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:07:29.947 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:07:29.950 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:07:29.953 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:07:32.524 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:07:32.527 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |M    |black |9     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:07:32.532 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:08:27.347 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 11:08:27.349 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 10:59:22 KST 2018]; root of context hierarchy 
+2018:12:02 11:08:27.351 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 11:08:56.159 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3181 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 11:08:56.170 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 11:08:56.390 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 11:08:56 KST 2018]; root of context hierarchy 
+2018:12:02 11:08:57.483 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 11:08:57.502 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 11:08:57.502 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 11:08:57.570 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 11:08:57.570 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1180 ms 
+2018:12:02 11:08:57.714 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 11:08:57.716 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 11:08:57.719 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 11:08:57.719 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 11:08:57.720 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 11:08:57.720 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 11:08:58.064 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 11:08:58.090 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 25 ms. 
+2018:12:02 11:08:58.092 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 11:08:58.115 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 22 ms. 
+2018:12:02 11:08:58.521 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 11:08:56 KST 2018]; root of context hierarchy 
+2018:12:02 11:08:58.568 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 11:08:58.569 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 11:08:58.570 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 11:08:58.570 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 11:08:58.571 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 11:08:58.572 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 11:08:58.573 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 11:08:58.574 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 11:08:58.576 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 11:08:58.577 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 11:08:58.606 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 11:08:58.606 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 11:08:58.635 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 11:08:58.670 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 11:08:59.002 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 11:08:59.174 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 11:08:59.223 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 11:08:59.228 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.392 seconds (JVM running for 4.042) 
+2018:12:02 11:09:34.246 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 11:09:34.247 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 11:09:34.267 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms 
+2018:12:02 11:28:46.521 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:29:02.064 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:29:47.608 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:32:19.721 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:32:23.616 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |charcoal |1     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:32:23.621 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |charcoal |1     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:32:23.625 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:33:51.339 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:34:02.702 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:36:08.671 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 11:36:08.674 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 11:08:56 KST 2018]; root of context hierarchy 
+2018:12:02 11:36:08.683 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:02 11:43:54.784 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3491 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:02 11:43:54.805 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:02 11:43:55.063 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 11:43:55 KST 2018]; root of context hierarchy 
+2018:12:02 11:43:56.281 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:02 11:43:56.309 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:02 11:43:56.310 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:02 11:43:56.397 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:02 11:43:56.398 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1335 ms 
+2018:12:02 11:43:56.595 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:02 11:43:56.596 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:02 11:43:56.599 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:02 11:43:56.600 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:02 11:43:56.601 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:02 11:43:56.602 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:02 11:43:57.060 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:02 11:43:57.095 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 34 ms. 
+2018:12:02 11:43:57.098 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:02 11:43:57.125 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 27 ms. 
+2018:12:02 11:43:57.625 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 11:43:55 KST 2018]; root of context hierarchy 
+2018:12:02 11:43:57.674 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:02 11:43:57.675 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:02 11:43:57.676 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:02 11:43:57.677 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:02 11:43:57.679 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:02 11:43:57.680 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:02 11:43:57.682 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:02 11:43:57.683 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:02 11:43:57.686 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:02 11:43:57.687 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:02 11:43:57.723 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 11:43:57.724 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 11:43:57.773 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:02 11:43:57.815 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:02 11:43:58.268 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:02 11:43:58.437 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:02 11:43:58.487 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:02 11:43:58.493 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 4.075 seconds (JVM running for 4.792) 
+2018:12:02 11:44:03.697 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:02 11:44:03.697 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:02 11:44:03.712 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+2018:12:02 11:44:09.007 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000  |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|2  |나이키  |5000    |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|3  |나이키  |2525211 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:12.255 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:16.568 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |5     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:44:16.572 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|--------------|---|-----|------|------|
+|email         |id |size |color |count |
+|--------------|---|-----|------|------|
+|test@test.com |1  |L    |black |5     |
+|--------------|---|-----|------|------|
+ 
+2018:12:02 11:44:16.576 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:20.970 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|4  |청바지  |18615 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|5  |청바지  |12122 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:22.225 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:25.429 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |black    |5     |
+|test@test.com |6  |S    |charcoal |3     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:44:25.432 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |black    |5     |
+|test@test.com |6  |S    |charcoal |3     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:44:25.438 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:25.443 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:28.417 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|------|-------|--------|-------|----------------|---------|-----|-------|
+|id |name  |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|------|-------|--------|-------|----------------|---------|-----|-------|
+|13 |에어프라이 |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|14 |에어프라이 |3211   |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|15 |에어프라이 |65156  |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|------|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:29.777 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+|id |name  |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+|14 |에어프라이 |3211  |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:32.638 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |black    |5     |
+|test@test.com |6  |S    |charcoal |3     |
+|test@test.com |14 |L    |charcoal |1     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:44:32.643 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |black    |5     |
+|test@test.com |6  |S    |charcoal |3     |
+|test@test.com |14 |L    |charcoal |1     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:44:32.648 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:32.656 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:32.660 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+|id |name  |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+|14 |에어프라이 |3211  |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:35.504 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|7  |유아옷  |41812   |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|8  |유아옷  |1851521 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|9  |유아옷  |52156   |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:36.886 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|8  |유아옷  |1851521 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:40.805 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |black    |5     |
+|test@test.com |6  |S    |charcoal |3     |
+|test@test.com |8  |L    |black    |5     |
+|test@test.com |14 |L    |charcoal |1     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:44:40.809 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|--------------|---|-----|---------|------|
+|email         |id |size |color    |count |
+|--------------|---|-----|---------|------|
+|test@test.com |1  |L    |black    |5     |
+|test@test.com |6  |S    |charcoal |3     |
+|test@test.com |8  |L    |black    |5     |
+|test@test.com |14 |L    |charcoal |1     |
+|--------------|---|-----|---------|------|
+ 
+2018:12:02 11:44:40.812 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|id |name |price  |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+|1  |나이키  |100000 |ho1.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|-------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:40.815 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|id |name |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+|6  |청바지  |12122 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:40.819 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|id |name |price   |image   |detail |delivery_charge |hitcount |size |color  |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+|8  |유아옷  |1851521 |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|-----|--------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:44:40.825 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+|id |name  |price |image   |detail |delivery_charge |hitcount |size |color  |
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+|14 |에어프라이 |3211  |ho2.jpg |보기     |무료 배송           |0        |     |[null] |
+|---|------|------|--------|-------|----------------|---------|-----|-------|
+ 
+2018:12:02 11:45:32.352 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:02 11:45:32.354 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Sun Dec 02 11:43:55 KST 2018]; root of context hierarchy 
+2018:12:02 11:45:32.358 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 

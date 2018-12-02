@@ -1,16 +1,19 @@
 <template lang="html">
 <div>
-  <img @click="goDetail" src="@/components/etc/250x300.png" alt="">
-    <ul>
+  <img @click="goDetail" src="https://via.placeholder.com/180x200" alt="">
       <li>{{data.deliveryCharge}}</li>
       <li>{{data.name}}</li>
-      <li>{{data.price}}</li>
-    </ul>
+      <li>{{localePrice}} 원</li>
 </div>
 </template>
 
 <script>
 export default {
+  computed: {
+    localePrice() {
+      return Number(this.data.price).toLocaleString("en");
+    }
+  },
   methods: {
     goDetail: function() {
       sessionStorage.setItem("p_id", this.data.id);
