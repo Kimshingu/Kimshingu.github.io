@@ -65,6 +65,11 @@ export default {
         });
     },
     goOrder() {
+      this.prop.color = this.selectedColor;
+      this.prop.size = this.selectedSize;
+      this.prop.hitcount = this.selectedCount;
+
+      sessionStorage.setItem("order", JSON.stringify([this.prop]));
       this.$router.push("/order");
     }
   },

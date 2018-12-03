@@ -16,6 +16,10 @@
         </tr>
       </tbody>
     </table>
+    <div class="text-center">
+      <button @click="goIndex" type="button" class="btn btn-color2">계속 쇼핑하기</button>
+      <button @click="goOrder" type="button" class="btn btn-color1">주문하기</button>
+      </div>  
   </div>
 </template>
 
@@ -62,6 +66,26 @@ export default {
   methods: {
     localize(money) {
       return Number(money).toLocaleString("en");
+    },
+    goIndex() {
+      this.$router.push("/");
+    },
+    goOrder() {
+      for (let index = 0; index < this.prop.cart.length; index++) {
+        this.prop.product[index].size = this.prop.cart[index].cart_size;
+        this.prop.product[index].color = this.prop.cart[index].cart_color;
+        this.prop.product[index].hitcount = this.prop.cart[index].cart_count;
+
+        this.prop.product[index].price = Number(
+          this.prop.product[index].price.split(",").join("")
+        );
+        this.prop.product[index].deliveryCharge = Number(
+          this.prop.product[index].deliveryCharge.split(",").join("")
+        );
+      }
+
+      sessionStorage.setItem("order", JSON.stringify(this.prop.product));
+      this.$router.push("/order");
     }
   }
 };
