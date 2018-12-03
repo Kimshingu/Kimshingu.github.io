@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -45,5 +46,10 @@ public class CartController {
 		map.put("product", list);
 		
 		return map;
+	}
+	
+	@DeleteMapping("/cart")
+	public void deleteCart(@RequestBody Cart cart) {
+		C_mapper.delete(cart);
 	}
 }

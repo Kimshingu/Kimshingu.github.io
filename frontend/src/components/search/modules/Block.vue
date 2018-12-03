@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
   <img @click="goDetail" src="https://via.placeholder.com/180x200" alt="">
-      <li>{{data.deliveryCharge}}</li>
+      <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
       <li>{{data.name}}</li>
       <li>{{localePrice}} 원</li>
 </div>
@@ -12,6 +12,9 @@ export default {
   computed: {
     localePrice() {
       return Number(this.data.price).toLocaleString("en");
+    },
+    localeCharge() {
+      return Number(this.data.deliveryCharge).toLocaleString("en");
     }
   },
   methods: {

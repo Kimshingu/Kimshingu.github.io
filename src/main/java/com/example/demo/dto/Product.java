@@ -14,7 +14,7 @@ public class Product {
 	private int price;
 	private String image;
 	private String detail;
-	private String deliveryCharge;
+	private int deliveryCharge;
 	private int hitcount;
 	private String size;
 	private String color;

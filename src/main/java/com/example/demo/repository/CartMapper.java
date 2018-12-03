@@ -10,4 +10,5 @@ import com.example.demo.dto.Cart;
 public interface CartMapper {
 	public int insert(Cart cart);
 	public List<Cart> selectAll(String email);
+	public int delete(Cart cart);
 }

@@ -33,6 +33,7 @@ export default {
       .then(function(response) {
         for (let product of response.data.product) {
           product.price = self.localePrice(product.price);
+          product.deliveryCharge = self.localePrice(product.deliveryCharge);
         }
 
         self.data = response.data;

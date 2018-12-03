@@ -17,10 +17,10 @@
 	<insert id="insert" parameterType="Cart">
 		INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(#{user_email}, #{product_id}, #{cart_size}, #{cart_color}, #{cart_count})
 	</insert>
-<!-- 
-	<delete id="delete" parameterType="String">
-		DELETE FROM USER WHERE EMAIL = #{email}
-	</delete> -->
+
+	<delete id="delete" parameterType="Cart">
+		DELETE FROM CART WHERE EMAIL = #{user_email} AND ID = #{product_id} AND COLOR = #{cart_color} AND SIZE = #{cart_size}
+	</delete>
 	
 	
 	<select id="selectAll" parameterType="String" resultMap="resultCartMap">

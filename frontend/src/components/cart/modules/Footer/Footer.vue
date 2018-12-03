@@ -11,8 +11,8 @@
       <tbody>
         <tr>
           <td>{{totalPrice}} 원</td>
-          <td>무료배송</td>
-          <td>{{totalPrice}} 원</td>
+          <td>{{totalDelivery!='0'?totalDelivery+' 원':'무료배송'}}</td>
+          <td>{{totalResult}} 원</td>
         </tr>
       </tbody>
     </table>
@@ -32,8 +32,32 @@ export default {
       }
       return this.localize(price);
     },
-    totalDelivery: function() {},
-    totalResult: function() {}
+
+    totalDelivery: function() {
+      let charge = 0;
+
+      for (let index = 0; index < this.prop.product.length; index++) {
+        const product = this.prop.product[index];
+        charge += Number(product.deliveryCharge.split(",").join(""));
+      }
+      return this.localize(charge);
+    },
+
+    totalResult: function() {
+      let price = 0;
+      let charge = 0;
+      for (let index = 0; index < this.prop.cart.length; index++) {
+        const cart = this.prop.cart[index];
+        const product = this.prop.product[index];
+        price += Number(product.price.split(",").join("")) * cart.cart_count;
+      }
+
+      for (const product of this.prop.product) {
+        charge += Number(product.deliveryCharge.split(",").join(""));
+      }
+      let result = price + charge;
+      return this.localize(result);
+    }
   },
   methods: {
     localize(money) {

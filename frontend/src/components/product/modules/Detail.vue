@@ -2,7 +2,7 @@
   <div v-if="prop">
     <h3>{{prop.name}}</h3>
     <li>{{localePrice}} 원</li>
-    <li>{{prop.deliveryCharge}}</li>
+    <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
     <!-- <li>{{prop.seller}}</li> -->
     <b-form-select v-model="selectedSize" value="null" id="size" :options="sizeOp" class="mb-3"/>
     <b-form-select v-model="selectedColor" value="null" id="color" :options="colorOp" class="mb-3"/>
@@ -19,6 +19,9 @@ export default {
   computed: {
     localePrice() {
       return Number(this.prop.price).toLocaleString("en");
+    },
+    localeCharge() {
+      return Number(this.prop.deliveryCharge).toLocaleString("en");
     }
   },
   data() {
@@ -62,22 +65,7 @@ export default {
         });
     },
     goOrder() {
-      var self = this;
-      this.$http
-        .post("/order", {
-          email: self.$refs["email"].value,
-          password: self.$refs["password"].value
-        })
-        .then(function(response) {
-          sessionStorage.setItem(
-            "user",
-            JSON.stringify({ name: response.data.name })
-          );
-          self.$router.push("/");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+      this.$router.push("/order");
     }
   },
   props: ["prop"]
