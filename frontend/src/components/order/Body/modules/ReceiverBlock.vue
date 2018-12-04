@@ -16,9 +16,9 @@
           </td>
         </tr>
         <tr>
-          <th>이메일</th>
+          <th>주소</th>
           <td>
-            <input v-model="data.email" type="text">
+            <input v-model="data.address" type="text">
           </td>
         </tr>
       </tbody>
@@ -35,6 +35,7 @@ export default {
   },
   created() {
     this.data = JSON.parse(sessionStorage.getItem("user"));
+    this.$emit("receiver", this.data);
   }
 };
 </script>

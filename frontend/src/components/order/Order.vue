@@ -1,8 +1,8 @@
 <template>
   <div>
     <OrderHeader></OrderHeader>
-    <OrderBody :prop="data"></OrderBody>
-    <OrderFooter></OrderFooter>
+    <OrderBody @receiver="getReceiver" :prop="data"></OrderBody>
+    <OrderFooter :prop="receiver"></OrderFooter>
   </div>
 </template>
 
@@ -11,8 +11,14 @@ import Header from "./Header/Header";
 import Body from "./Body/Body";
 import Footer from "./Footer/Footer";
 export default {
+  methods: {
+    getReceiver: function(data) {
+      this.receiver = data;
+    }
+  },
   data() {
     return {
+      receiver: null,
       data: null
     };
   },

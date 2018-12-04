@@ -12,10 +12,14 @@ import Search from '@/components/search/Search'
 import Product from '@/components/product/Product'
 import Cart from '@/components/cart/Cart'
 import Order from '@/components/order/Order'
+import moment from 'moment'
+moment.locale('ko');
+
 Vue.prototype.$bus = new Vue();
 Vue.prototype.$http = axios;
 Vue.use(BootstrapVue);
 Vue.use(Router)
+
 
 export default new Router({
   mode: 'hash',

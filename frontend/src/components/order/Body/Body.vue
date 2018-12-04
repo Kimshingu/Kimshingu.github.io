@@ -2,7 +2,7 @@
   <div>
     <ProductBlock :prop="prop"></ProductBlock>
     <UserBlock></UserBlock>
-    <ReceiverBlock></ReceiverBlock>
+    <ReceiverBlock @receiver="emitReceiver"></ReceiverBlock>
     <PurchaseInfo :prop="prop"></PurchaseInfo>
     <Method></Method>
   </div>
@@ -15,6 +15,11 @@ import ReceiverBlock from "./modules/ReceiverBlock";
 import PurchaseInfo from "./modules/PurchaseInfo";
 import Method from "./modules/Method";
 export default {
+  methods: {
+    emitReceiver: function(data) {
+      this.$emit("receiver", data);
+    }
+  },
   components: {
     ProductBlock: ProductBlock,
     UserBlock: UserBlock,

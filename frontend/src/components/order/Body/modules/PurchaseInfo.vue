@@ -47,6 +47,10 @@ export default {
 
       return Number(result).toLocaleString("en");
     }
+  },
+  created() {
+    let info = { price: this.price, charge: this.charge, total: this.total };
+    sessionStorage.setItem("info", JSON.stringify(info));
   }
 };
 </script>
