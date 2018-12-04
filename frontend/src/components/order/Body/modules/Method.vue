@@ -125,9 +125,63 @@ export default {
     };
   },
   created() {
+    this.$bus.$emit("method", this.radioSelected);
     this.date = moment()
       .add(1, "days")
       .format("YYYY[년] MM[월] Do h[시] mm[분 까지]");
+  },
+  watch: {
+    radioSelected: function() {
+      let select = {
+        radioSelected: this.radioSelected,
+        cardSelected: this.cardSelected,
+        halbuSelected: this.halbuSelected,
+        bankSelected: this.bankSelected,
+        phoneSelected: this.phoneSelected
+      };
+      this.$bus.$emit("method", select);
+    },
+    cardSelected: function() {
+      let select = {
+        radioSelected: this.radioSelected,
+        cardSelected: this.cardSelected,
+        halbuSelected: this.halbuSelected,
+        bankSelected: this.bankSelected,
+        phoneSelected: this.phoneSelected
+      };
+      this.$bus.$emit("method", select);
+    },
+    halbuSelected: function() {
+      let select = {
+        radioSelected: this.radioSelected,
+        cardSelected: this.cardSelected,
+        halbuSelected: this.halbuSelected,
+        bankSelected: this.bankSelected,
+        phoneSelected: this.phoneSelected
+      };
+      this.$bus.$emit("method", select);
+    },
+    bankSelected: function() {
+      let select = {
+        radioSelected: this.radioSelected,
+        cardSelected: this.cardSelected,
+        halbuSelected: this.halbuSelected,
+        bankSelected: this.bankSelected,
+        phoneSelected: this.phoneSelected,
+        date: this.date
+      };
+      this.$bus.$emit("method", select);
+    },
+    phoneSelected: function() {
+      let select = {
+        radioSelected: this.radioSelected,
+        cardSelected: this.cardSelected,
+        halbuSelected: this.halbuSelected,
+        bankSelected: this.bankSelected,
+        phoneSelected: this.phoneSelected
+      };
+      this.$bus.$emit("method", select);
+    }
   }
 };
 </script>

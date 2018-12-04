@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="select">
     <b-modal id="modal1" title="결제정보" hide-footer>
       <h3 class="text-left">구매자 정보</h3>
       <table class="table" v-if="data">
@@ -54,7 +54,63 @@
           </tr>
         </tbody>
       </table>
-      {{select}}
+
+      <h3 class="text-left">결제방법 : {{select.radioSelected}}</h3>
+      <table class="table" v-if="select.radioSelected=='card'">
+        <thead>
+          <tr>
+            <th>종류</th>
+            <th>할부기간</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{select.cardSelected}}</td>
+            <td>{{select.halbuSelected}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table" v-if="select.radioSelected=='mutong'">
+        <thead>
+          <tr>
+            <th>입금은행</th>
+            <th>입금기한</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{select.bankSelected}}</td>
+            <td>{{select.date}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table" v-if="select.radioSelected=='account'">
+        <thead>
+          <tr>
+            <th>입금은행</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{select.bankSelected}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table" v-if="select.radioSelected=='phone'">
+        <thead>
+          <tr>
+            <th>통신사 종류</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{select.phoneSelected | uppercase}}</td>
+          </tr>
+        </tbody>
+      </table>
     </b-modal>
   </div>
 </template>
@@ -70,10 +126,18 @@ export default {
     };
   },
   created() {
+    this.$bus.$on("method", data => {
+      this.select = data;
+    });
     this.data = JSON.parse(sessionStorage.getItem("user"));
     this.info = JSON.parse(sessionStorage.getItem("info"));
-    this.select = JSON.parse(sessionStorage.getItem("select"));
-    console.log(this.select);
+  },
+  filters: {
+    uppercase: function(v) {
+      if (v) {
+        return v.toUpperCase();
+      }
+    }
   }
 };
 </script>

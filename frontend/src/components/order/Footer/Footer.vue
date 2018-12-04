@@ -1,12 +1,6 @@
 <template>
   <div id="orderFooter" class="text-center">
-    <Button
-      @click="buyClick"
-      id="buyButton"
-      type="button"
-      class="btn btn-color1"
-      v-b-modal.modal1
-    >결제하기</Button>
+    <Button id="buyButton" type="button" class="btn btn-color1" v-b-modal.modal1>결제하기</Button>
     <Modal :prop="prop"></Modal>
   </div>
 </template>
@@ -17,9 +11,6 @@ export default {
   props: ["prop"],
   components: {
     Modal: Modal
-  },
-  methods: {
-    buyClick() {}
   }
 };
 </script>
