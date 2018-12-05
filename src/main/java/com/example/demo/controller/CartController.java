@@ -25,10 +25,14 @@ public class CartController {
 	@Autowired
 	public ProductMapper P_mapper;
 	
+	// URL : /cart 일때 cart 테이블에 insert(INSERT INTO 문과 함께 VALUES 절을 사용하여 
+	// 해당 테이블에 새로운 레코드를 추가할 수 있습니다.)하겠다.
+	// post요청방식으로 mapping 하겠다.
 	@PostMapping("/cart")
 	public Object postCart(@RequestBody Cart cart) {
 		return C_mapper.insert(cart);
 	}
+	
 	
 	@GetMapping("/cart")
 	public Object getCart(@RequestParam(value="id") String user_email) {
