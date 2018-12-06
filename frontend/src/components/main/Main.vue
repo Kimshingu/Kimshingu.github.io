@@ -2,9 +2,9 @@
   <div>
     <div id="main" class="align-middle">
       <Header></Header>
+      <Article></Article>
+      <Footer></Footer>
     </div>
-    <Article></Article>
-    <Footer></Footer>
   </div>
 </template>
 
@@ -35,5 +35,9 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+.align-middle {
+  font-family: 'Noto Serif KR', sans-serif;
+	} 
 
 </style>

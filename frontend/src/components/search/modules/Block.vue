@@ -1,6 +1,6 @@
 <template lang="html">
-<div>
-  <img @click="goDetail" src="https://via.placeholder.com/180x200" alt="">
+<div class="block">
+  <img @click="goDetail" src="https://via.placeholder.com/200x200" alt="">
       <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
       <li>{{data.name}}</li>
       <li>{{localePrice}} 원</li>
@@ -27,5 +27,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style>
+
+
 </style>

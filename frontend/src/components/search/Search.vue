@@ -1,10 +1,10 @@
 <template lang="html">
-  <div class="">
+  <div class="search">
     <!-- 아래에서 선언한것 에서 쓸려면 태그 형식으로 쓴다. -->
     <Header></Header>
     <Result></Result>
     <!-- result를 for문 할 것을 block에 딤겠다. -->
-    <div v-for="block of result" >
+    <div v-for="block of result" class="searchblock">
       <Block :data="block"></Block>
     </div>
     <div v-if="result.length==0">
@@ -39,5 +39,13 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style>
+.search {
+  font-size: 16px;
+}
+.searchblock {
+  float:left;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
 </style>

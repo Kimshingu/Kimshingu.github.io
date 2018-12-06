@@ -1,5 +1,7 @@
 <template>
+
   <div id="product">
+    <img src="https://via.placeholder.com/200x200" alt="">
     <Detail :prop="product"></Detail>
   </div>
 </template>
@@ -9,7 +11,9 @@ import Detail from "./modules/Detail";
 
 export default {
   data() {
-    return { product: null };
+    return {
+      product: null
+    };
   },
   components: {
     Detail: Detail
@@ -27,6 +31,7 @@ export default {
   }
 };
 </script>
+
 
 <style>
 #product {
