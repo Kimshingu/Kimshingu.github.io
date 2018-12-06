@@ -1,13 +1,14 @@
 <template>
   <div v-if="prop">
-    <h3>{{prop.name}}</h3>
+    <h4>{{prop.name}}</h4>
+    <hr>
     <li>{{localePrice}} 원</li>
     <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
     <!-- <li>{{prop.seller}}</li> -->
     <b-form-select v-model="selectedSize" value="null" id="size" :options="sizeOp" class="mb-3"/>
     <b-form-select v-model="selectedColor" value="null" id="color" :options="colorOp" class="mb-3"/>
-
     <b-form-input v-model="selectedCount" type="number" min="1" max="20"></b-form-input>
+
     <br>
     <button @click="goCart" type="button" class="btn btn-secondary">장바구니에 담기</button>
     <button @click="goOrder" type="button" class="btn btn-primary">바로구매</button>
