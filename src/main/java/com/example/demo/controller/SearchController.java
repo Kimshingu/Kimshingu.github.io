@@ -16,12 +16,13 @@ public class SearchController {
 	@Autowired
 	ProductMapper mapper;
 	
-	
+	// /search?kwd='입력한 검색어'의 값을 받는다.
 	@GetMapping("/search")
 	public Object postSearch(@RequestParam(value="kwd") String kwd) {
 		if(kwd.equals("")) {
 			return null;
 		}
+		// '입력한 검색어'로 select 문을 수행한 후 product 객체를 list로 담는다.
 		List<Product> result = mapper.searchAll(kwd); 
 		return result;
 	} 

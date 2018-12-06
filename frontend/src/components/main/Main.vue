@@ -12,12 +12,15 @@
 import Header from "./Header/Header";
 import Article from "./Article/Article";
 import Footer from "./Footer/Footer";
+
 export default {
   components: {
     Header: Header,
     Article: Article,
     Footer: Footer
-  },
+  }
+  /* 테스트용 로그인
+  ,
   created() {
     sessionStorage.setItem(
       "user",
@@ -31,10 +34,11 @@ export default {
       })
     );
   }
+  */
 };
 </script>
-
 <style>
+
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 .align-middle {
   font-family: 'Noto Serif KR', sans-serif;

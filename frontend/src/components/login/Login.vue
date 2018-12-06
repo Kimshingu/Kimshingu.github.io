@@ -99,6 +99,7 @@ export default {
   methods: {
     doPost: function() {
       var self = this;
+      // spring LoginController.java @PostMapping으로 입력한 email, password value를 전달한다.
       this.$http
         .post("/login", {
           email: self.$refs["email"].value,
@@ -109,6 +110,7 @@ export default {
           self.$router.push("/");
         })
         .catch(function(error) {
+          alert('아이디, 비밀번호를 다시 확인해 주세요.');
           console.log(error);
         });
     },
