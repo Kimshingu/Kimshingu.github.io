@@ -1292,3 +1292,6 @@
 |1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
 |---|--------------------------------------|------|----------------|--------|---------|-----|-------|
  
+2018:12:06 18:38:43.946 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:06 18:38:43.946 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:31:03 KST 2018]; root of context hierarchy 
+2018:12:06 18:38:43.946 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
