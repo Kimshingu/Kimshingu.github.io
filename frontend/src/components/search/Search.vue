@@ -1,5 +1,6 @@
 <template lang="html">
-  <div class="">
+
+  <div class="search" class="searchblock">
     <Header></Header>
     <Result></Result>
     <div v-for="block of result" >
@@ -46,5 +47,13 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style>
+.search {
+  font-size: 16px;
+}
+.searchblock {
+  float:left;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
 </style>

@@ -1,5 +1,6 @@
 <template lang="html">
 <div>
+<div class="block">
   <img @click="goDetail" :src="getImgUrl(data.id)" alt="" width="200" height="200">
       <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
       <li>{{data.name}}</li>
@@ -31,5 +32,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style>
+
+
 </style>

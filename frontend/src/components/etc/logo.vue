@@ -17,5 +17,6 @@ export default {
 <style>
 img {
   cursor: pointer;
+
 }
 </style>

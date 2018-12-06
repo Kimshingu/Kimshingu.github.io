@@ -13,7 +13,7 @@ export default {};
 
 <style>
 .detail {
-  width: 200px;
+  width: 230px;
   font-size: 0.8em;
 }
 

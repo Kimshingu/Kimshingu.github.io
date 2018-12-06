@@ -1,6 +1,15 @@
 <template>
   <div v-if="select">
     <b-modal id="modal1" title="결제정보" hide-footer>
+      <h3 class="text-left">상품정보</h3>
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <img src="https://via.placeholder.com/50x50" alt>
+        </div>
+        <div class="col-6">{{productView}}</div>
+      </div>
+      <hr>
       <h3 class="text-left">구매자 정보</h3>
       <table class="table" v-if="data">
         <thead>
@@ -55,7 +64,7 @@
         </tbody>
       </table>
 
-      <h3 class="text-left">결제방법 : {{select.radioSelected}}</h3>
+      <h3 class="text-left">결제방법 : {{methodView}}</h3>
       <table class="table" v-if="select.radioSelected=='card'">
         <thead>
           <tr>
@@ -65,8 +74,8 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{select.cardSelected}}</td>
-            <td>{{select.halbuSelected}}</td>
+            <td>{{cardView}}</td>
+            <td>{{halbuView}}</td>
           </tr>
         </tbody>
       </table>
@@ -80,7 +89,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{select.bankSelected}}</td>
+            <td>{{bankView}}</td>
             <td>{{select.date}}</td>
           </tr>
         </tbody>
@@ -94,7 +103,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{select.bankSelected}}</td>
+            <td>{{bankView}}</td>
           </tr>
         </tbody>
       </table>
@@ -122,10 +131,13 @@ export default {
     return {
       info: null,
       data: null,
-      select: null
+      select: null,
+      product: null
     };
   },
   created() {
+    this.product = JSON.parse(sessionStorage.getItem("order"));
+
     this.$bus.$on("method", data => {
       this.select = data;
     });
@@ -138,9 +150,120 @@ export default {
         return v.toUpperCase();
       }
     }
+  },
+  computed: {
+    methodView: function() {
+      let result = "";
+      switch (this.select.radioSelected) {
+        case "card":
+          result = "신용카드";
+          break;
+        case "mutong":
+          result = "무통장입금";
+          break;
+        case "account":
+          result = "실시간 계좌이체";
+          break;
+        case "phone":
+          result = "휴대폰결제";
+          break;
+        default:
+          break;
+      }
+      return result;
+    },
+    cardView: function() {
+      let result = "";
+      switch (this.select.cardSelected) {
+        case "shinhan":
+          result = "신한카드";
+          break;
+        case "samsung":
+          result = "삼성카드";
+          break;
+        case "hyundai":
+          result = "현대카드";
+          break;
+        case "lotte":
+          result = "롯데카드";
+          break;
+        default:
+          break;
+      }
+      return result;
+    },
+    bankView: function() {
+      let result = "";
+      switch (this.select.bankSelected) {
+        case "shinhan":
+          result = "신한은행";
+          break;
+        case "kb":
+          result = "국민은행";
+          break;
+        case "nh":
+          result = "농협은행";
+          break;
+        case "woori":
+          result = "우리은행";
+          break;
+        case "hana":
+          result = "하나은행";
+          break;
+        case "ibk":
+          result = "기업은행";
+          break;
+        default:
+          break;
+      }
+      return result;
+    },
+    halbuView: function() {
+      let result = "";
+      switch (this.select.halbuSelected) {
+        case "All":
+          result = "일시불";
+          break;
+        case 2:
+          result = "2개월(무이자)";
+          break;
+        case 4:
+          result = "4개월(무이자)";
+          break;
+        case 6:
+          result = "6개월";
+          break;
+        case 8:
+          result = "8개월";
+          break;
+        case 10:
+          result = "10개월";
+          break;
+        case 12:
+          result = "12개월";
+          break;
+        default:
+          break;
+      }
+      return result;
+    },
+    productView: function() {
+      if (this.product.length > 1) {
+        return `${this.product[0].name} | ${this.product[0].size} | ${
+          this.product[0].color
+        } 외 ${this.product.length - 1}건`;
+      } else {
+        return `${this.product[0].name} | ${this.product[0].size} | ${
+          this.product[0].color
+        }`;
+      }
+    }
   }
 };
 </script>
 
 <style>
+.modal-header {
+  background-color: #4ec989;
+}
 </style>

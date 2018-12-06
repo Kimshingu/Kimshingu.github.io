@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <Carousel></Carousel>
-    <div class="row">
-      <div class="col-3">
-        <Block></Block>
-      </div>
-      <div class="col-3">
-        <Block></Block>
-      </div>
-      <div class="col-3">
-        <Block></Block>
-      </div>
-      <div class="col-3">
-        <Block></Block>
-      </div>
+<div>
+  <Carousel></Carousel>
+  <div class="row">
+    <div class="col-3">
+      <Block></Block>
+    </div>
+    <div class="col-3">
+      <Block></Block>
+    </div>
+    <div class="col-3">
+      <Block></Block>
+    </div>
+    <div class="col-3">
+      <Block></Block>
     </div>
   </div>
+</div>
 </template>
 
 <script>
