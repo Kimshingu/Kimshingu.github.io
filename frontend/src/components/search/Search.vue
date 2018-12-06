@@ -1,12 +1,11 @@
 <template lang="html">
-
-  <div class="search" class="searchblock">
+  <div class="search">
     <Header></Header>
     <Result></Result>
-    <div v-for="block of result" >
-      <!-- Block components에 data이름으로 block 객체를 바인드 한다. 상위 -> 하위컴포넌트 -->
-      <Block v-bind:data="block"></Block>
-    </div>
+    <div v-for="(block,index) of result" :key="index" class="searchblock">
+          <!-- Block components에 data이름으로 block 객체를 바인드 한다. 상위 -> 하위컴포넌트 -->
+           <Block v-bind:data="block"></Block>
+      </div>
     <div v-if="result.length==0">
       검색결과가 없습니다.
     </div>
@@ -51,9 +50,9 @@ export default {
 .search {
   font-size: 16px;
 }
-.searchblock {
-  float:left;
+/* .searchblock {
+  float: left;
   padding-right: 50px;
   margin-bottom: 50px;
-}
+} */
 </style>

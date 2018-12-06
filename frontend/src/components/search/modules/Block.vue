@@ -1,5 +1,4 @@
 <template lang="html">
-<div>
 <div class="block">
   <img @click="goDetail" :src="getImgUrl(data.id)" alt="" width="200" height="200">
       <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
@@ -24,15 +23,13 @@ export default {
       this.$router.push("/product");
     },
     getImgUrl: function(id) {
-    var images = require.context('../../productimg/', false, /\.jpg$/)
-    return images('./' + id + ".jpg")
-  }
+      var images = require.context("../../productimg/", false, /\.jpg$/);
+      return images("./" + id + ".jpg");
+    }
   },
   props: ["data"]
 };
 </script>
 
 <style>
-
-
 </style>
