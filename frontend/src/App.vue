@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
+      <!--라우터 뷰를 사용한다.-->
       <router-view/>
     </div>
   </div>

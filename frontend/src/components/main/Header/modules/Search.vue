@@ -1,9 +1,9 @@
 <template>
   <div id="search">
-    <!-- 
-    @submit.prevent="getResult" : form이 서버로 요청하면 "getResult"메소드가 작동 
-    .prevent : ()데이터를 받아오고) 화면갱신 하지않는다.
-    method="get" -> get방식 : 서버가 우리한테 줌 
+    <!--
+    @submit.prevent="getResult" : form이 서버로 요청하면 "getResult"메소드가 작동
+    .prevent : (데이터를 받아오고) 화면갱신 하지않는다.
+    method="get" -> get방식 : 서버가 우리한테 줌
    -->
     <form @submit.prevent="getResult" method="get">
       <div class="input-group">
@@ -23,23 +23,23 @@
 export default {
   methods: {
     getResult() {
-      // this는 vue를 가르킨다. 즉 vue를 self로 부르겠다. 
+      // this는 vue를 가르킨다. 즉 vue를 self로 부르겠다.
       var self = this;
-      // this.$http : 라우터에 (index.js) axios 정의 
-      // axios : 동적으로 데이터를 가져오기 위한 라이브러리 
+      // this.$http : 라우터에 (index.js) axios 정의
+      // axios : 동적으로 데이터를 가져오기 위한 라이브러리
       this.$http
-      // 위에 input박스의 값을 URL로 보여줌 
+      // 위에 input박스의 값을 URL로 보여줌
         .get("/search?kwd=" + self.$refs["kwd"].value)
         .then(function(response) {
-          // response가 돌려받은 데이터를 문자열로 바꿔서 'result'로 저장 
+          // response가 돌려받은 데이터를 문자열로 바꿔서 'result'로 저장
           sessionStorage.setItem("result", JSON.stringify(response.data));
-          // 여기서는 밖에있는 vue를 가르키지 못하기 때문에 self로 호출
+          // 여기서는 밖에 있는 vue를 가르키지 못하기 때문에 self로 호출
           self.$router.push("/search?kwd=" + self.$refs["kwd"].value);
         })
         .catch(function(error) {
           console.log(error);
         });
-      // 테스트용 로직 
+      // 테스트용 로직
       // var response = {
       //   data: {
       //     color: null,

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SignupService {
-
+	// 비밀번호 암호화 처리
 	public String encryptPassword(String password) {
 		String result = "";
 

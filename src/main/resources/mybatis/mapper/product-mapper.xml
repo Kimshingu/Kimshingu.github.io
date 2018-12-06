@@ -14,10 +14,12 @@
 		<result property="color" column="COLOR" />
 		<!-- <result property="seller" column="SELLER"/> -->
 	</resultMap>
-
+	
+	<!--입력한 검색어가 들어간 제품명을 db에서 찾는다.-->
 	<select id="searchAll" parameterType="String" resultMap="resultProductMap">
 		SELECT * FROM PRODUCT WHERE NAME LIKE CONCAT('%',#{name},'%')
 	</select>
+	
 	<select id="searchById" parameterType="int"
 		resultMap="resultProductMap">
 		SELECT * FROM PRODUCT WHERE ID=#{id}

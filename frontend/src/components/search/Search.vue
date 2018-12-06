@@ -1,11 +1,10 @@
 <template lang="html">
   <div class="">
-    <!-- 아래에서 선언한것 에서 쓸려면 태그 형식으로 쓴다. -->
     <Header></Header>
     <Result></Result>
-    <!-- result를 for문 할 것을 block에 딤겠다. -->
     <div v-for="block of result" >
-      <Block :data="block"></Block>
+      <!-- Block components에 data이름으로 block 객체를 바인드 한다. 상위 -> 하위컴포넌트 -->
+      <Block v-bind:data="block"></Block>
     </div>
     <div v-if="result.length==0">
       검색결과가 없습니다.
@@ -28,6 +27,14 @@ export default {
       result: null
     };
   },
+  /*
+  동일한 컴포넌트의 params 변경 사항에 반응하려면 $route 객체를 보면된다.
+     watch: {
+       '$route' (to, from) {
+         // 경로 변경에 반응하여...
+       }
+     }
+  */
   watch: {
     $route(to, from) {
       this.result = JSON.parse(sessionStorage.getItem("result"));
