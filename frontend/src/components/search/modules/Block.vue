@@ -1,9 +1,11 @@
 <template lang="html">
-<div class="block">
-  <img @click="goDetail" :src="getImgUrl(data.id)" alt="" width="200" height="200">
-      <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
+<div @click="goDetail" id="searchBlock">
+  <div class="text-center">
+  <img :src="getImgUrl(data.id)" alt="" width="200" height="200">
+  </div>
+      <li class="deliveryCharge">{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
       <li>{{data.name}}</li>
-      <li>{{localePrice}} 원</li>
+      <li class="productPrice">{{localePrice}} 원</li>
 </div>
 </template>
 
@@ -18,13 +20,13 @@ export default {
     }
   },
   methods: {
-    goDetail: function() {
-      sessionStorage.setItem("p_id", this.data.id);
-      this.$router.push("/product");
-    },
     getImgUrl: function(id) {
       var images = require.context("../../productimg/", false, /\.jpg$/);
       return images("./" + id + ".jpg");
+    },
+    goDetail() {
+      sessionStorage.setItem("p_id", this.data.id);
+      this.$router.push("/product");
     }
   },
   props: ["data"]
@@ -32,7 +34,24 @@ export default {
 </script>
 
 <style>
-li {
-   list-style:none;
+#searchBlock {
+  margin: 10px;
+  margin-left: 30px;
+  padding: 10px;
+  width: 230px;
+  height: 380px;
+  border: 1px solid black;
+}
+#searchBlock li {
+  list-style: none;
+}
+.productPrice {
+  font-weight: bold;
+  color: #963636;
+}
+
+.deliveryCharge {
+  font-weight: bold;
+  color: #5b9b86;
 }
 </style>

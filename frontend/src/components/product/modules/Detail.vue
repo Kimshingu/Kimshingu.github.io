@@ -49,28 +49,43 @@ export default {
       if (sessionStorage.getItem("user") === null) {
         this.$router.push("/login");
       }
-      this.$http
-        .post("/cart", {
-          user_email: JSON.parse(sessionStorage.getItem("user")).email,
-          product_id: self.prop.id,
-          cart_size: self.selectedSize,
-          cart_color: self.selectedColor,
-          cart_count: Number(self.selectedCount)
-        })
-        .then(function(response) {
-          self.$router.push("/cart");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+
+      if (
+        this.selectedCount !== null &&
+        (this.selectedSize !== null && this.selectedColor !== null)
+      ) {
+        this.$http
+          .post("/cart", {
+            user_email: JSON.parse(sessionStorage.getItem("user")).email,
+            product_id: self.prop.id,
+            cart_size: self.selectedSize,
+            cart_color: self.selectedColor,
+            cart_count: Number(self.selectedCount)
+          })
+          .then(function(response) {
+            self.$router.push("/cart");
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      } else {
+        alert("정보를 모두 선택하십시오.");
+      }
     },
     goOrder() {
       this.prop.color = this.selectedColor;
       this.prop.size = this.selectedSize;
       this.prop.hitcount = this.selectedCount;
 
-      sessionStorage.setItem("order", JSON.stringify([this.prop]));
-      this.$router.push("/order");
+      if (
+        this.selectedCount !== null &&
+        (this.selectedSize !== null && this.selectedColor !== null)
+      ) {
+        sessionStorage.setItem("order", JSON.stringify([this.prop]));
+        this.$router.push("/order");
+      } else {
+        alert("정보를 모두 선택하십시오.");
+      }
     }
   },
   props: ["prop"]
@@ -78,7 +93,6 @@ export default {
 </script>
 
 <style>
-
 li {
   list-style: none;
 }

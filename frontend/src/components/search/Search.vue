@@ -4,7 +4,8 @@
     <Result></Result>
     <div v-for="(block,index) of result" :key="index" class="searchblock">
           <!-- Block components에 data이름으로 block 객체를 바인드 한다. 상위 -> 하위컴포넌트 -->
-           <Block v-bind:data="block"></Block>
+          
+           <Block v-bind:data="block" class="searchblock_c"></Block>
       </div>
     <div v-if="result.length==0">
       검색결과가 없습니다.
@@ -50,9 +51,15 @@ export default {
 .search {
   font-size: 16px;
 }
-/* .searchblock {
+.searchblock {
   float: left;
-  padding-right: 50px;
-  margin-bottom: 50px;
-} */
+}
+
+.searchblock_c {
+  cursor: pointer;
+}
+
+.searchblock_c:hover {
+  box-shadow: 1px 1px 30px #bab8b8;
+}
 </style>
