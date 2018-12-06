@@ -1,17 +1,23 @@
 <template>
-  <div id="nf">
-    <logo class="text-center"></logo>
+  <div id="nf" class="text-center">
+    <!-- <logo ></logo> -->
+    <img @click="goMain" src="./NotFound.jpg">
     <h1>404 Not Found</h1>
     <p>페이지가 존재 하지 않습니다. :&lt;</p>
   </div>
 </template>
 
 <script>
-import logo from "./logo.vue";
+// import logo from "./logo.vue";
 export default {
-  components: {
-    logo: logo
-  }
+  // components: {
+  //   logo: logo
+  // }
+ methods: {
+      goMain() {
+        this.$router.push("/");
+      }
+    }
 };
 </script>
 

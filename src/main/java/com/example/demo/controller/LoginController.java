@@ -28,12 +28,19 @@ public class LoginController {
 	
 	@PostMapping("/login")
 	public Object postLogin(@RequestBody User user) {
+		/*
+		 loginservice.loginAuthenticate(user) return 값이 success일 경우,
+		 브라우저에서 가져온 email, password와 
+		 디비에서 selectOne(email)로 이름, 전화번호, 주소를 가져와 
+		 User 객체를 만든다.
+		*/
 		if (loginservice.loginAuthenticate(user).equals("success")) {
 			User passUser = new User(user.getEmail(), user.getPassword(), mapper.selectOne(user.getEmail()).getName(),
 					mapper.selectOne(user.getEmail()).getPhone(), mapper.selectOne(user.getEmail()).getAddress());
 			return passUser;
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			
 		}
 	}
 
