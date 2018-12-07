@@ -12,7 +12,7 @@
       <tbody>
         <tr v-for="(i,index) in prop" :key="index">
           <td>
-            <img src="https://via.placeholder.com/180x150">
+          <img :src="getImgUrl(i.id)" alt="" width="180" height="150">
           </td>
           <td>{{i.name}} | {{i.size}} | {{i.color}}</td>
           <td>{{i.hitcount}}</td>
@@ -32,7 +32,12 @@ export default {
     },
     price: function(context) {
       return Number(context.price).toLocaleString("en");
+    },
+    getImgUrl: function(id){
+      var images = require.context("../../../productimg", false, /\.jpg$/);
+      return images("./"+id+".jpg");
     }
+
   },
   props: ["prop"]
 };
