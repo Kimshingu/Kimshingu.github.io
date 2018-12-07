@@ -4,10 +4,10 @@
       <h3 class="text-left">상품정보</h3>
       <hr>
       <div class="row">
-        <div class="col-6">
-          <img :src="getImgUrl(product[0].id)" alt="" width="100" height="100">
+        <div class="col-4">
+          <img :src="getImgUrl(product[0].id)" alt width="100" height="100">
         </div>
-        <div class="col-6">{{productView}}</div>
+        <div class="col-8">{{productView}}</div>
       </div>
       <hr>
       <h3 class="text-left">구매자 정보</h3>
@@ -259,9 +259,9 @@ export default {
       }
     }
   },
-  methods:{
-    getImgUrl: function(id){
-      var images = require.context("../../productimg",false,/\.jpg$/);
+  methods: {
+    getImgUrl: function(id) {
+      var images = require.context("../../productimg", false, /\.jpg$/);
       return images("./" + id + ".jpg");
     }
   }
@@ -270,6 +270,7 @@ export default {
 
 <style>
 .modal-header {
-  background-color: #4ec989;
+  color: white;
+  background-color: #bf1011;
 }
 </style>

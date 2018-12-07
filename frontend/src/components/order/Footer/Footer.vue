@@ -64,13 +64,6 @@ export default {
 </script>
 
 <style>
-.btn-color1 {
-  background-color: #4ec989;
-}
-
-.btn-color1:hover {
-  background-color: #3d8e64;
-}
 #orderFooter {
   margin-top: 40px;
   margin-bottom: 50px;

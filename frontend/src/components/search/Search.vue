@@ -10,7 +10,7 @@
     <div v-if="result.length==0">
       검색결과가 없습니다.
     </div>
-  </div>
+</div>
 </template>
 
 <script>
