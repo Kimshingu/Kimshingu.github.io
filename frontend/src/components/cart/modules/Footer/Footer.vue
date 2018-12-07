@@ -18,7 +18,7 @@
     </table>
     <div class="text-center">
       <button @click="goIndex" type="button" class="btn btn-color2">계속 쇼핑하기</button>
-      <button @click="goOrder" type="button" class="btn btn-color1">주문하기</button>
+      <button v-if="prop.cart.length!==0" @click="goOrder" type="button" class="btn btn-color1">주문하기</button>
       </div>  
   </div>
 </template>

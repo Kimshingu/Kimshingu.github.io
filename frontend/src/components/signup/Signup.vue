@@ -210,20 +210,29 @@ export default {
     },
     doPost: function() {
       var self = this;
-      this.$http
-        .post("/signup", {
-          email: self.$refs["email"].value,
-          password: self.$refs["pwbox"].value,
-          name: self.$refs["name"].value,
-          phone: self.$refs["phone"].value,
-          address: self.$refs["address"].value
-        })
-        .then(function(response) {
-          self.$router.push("/login");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+
+      if (
+        this.$refs["pwbox"].className.includes("is-valid") &&
+        this.$refs["pwbox_c"].className.includes("is-valid") &&
+        this.$refs["email"].className.includes("is-valid")
+      ) {
+        this.$http
+          .post("/signup", {
+            email: self.$refs["email"].value,
+            password: self.$refs["pwbox"].value,
+            name: self.$refs["name"].value,
+            phone: self.$refs["phone"].value,
+            address: self.$refs["address"].value
+          })
+          .then(function(response) {
+            self.$router.push("/login");
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      } else {
+        alert("정보를 제대로 입력했는지 확인 해 주십시오.");
+      }
     },
     isValidAccount() {
       var self = this;
