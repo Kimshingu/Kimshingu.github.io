@@ -1,8 +1,14 @@
 <template>
 
   <div id="product">
-    <img src="https://via.placeholder.com/200x200" alt="">
-    <Detail :prop="product"></Detail>
+    <div v-if="product" class="row">
+      <div class="col-5">
+        <img :src="getImgUrl(product.id)" alt="" width="400" height="400">
+      </div>
+      <div class="col-7">
+        <Detail :prop="product"></Detail>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -28,6 +34,12 @@ export default {
       .catch(function(error) {
         console.log(error);
       });
+  },
+  methods:{
+    getImgUrl: function(id) {
+      var images = require.context("../productimg/", false, /\.jpg$/);
+      return images("./" + id + ".jpg");
+    }
   }
 };
 </script>
