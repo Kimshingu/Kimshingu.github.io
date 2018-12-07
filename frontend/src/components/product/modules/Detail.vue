@@ -49,6 +49,7 @@ export default {
       var self = this;
       if (sessionStorage.getItem("user") === null) {
         this.$router.push("/login");
+        return;
       }
 
       if (
