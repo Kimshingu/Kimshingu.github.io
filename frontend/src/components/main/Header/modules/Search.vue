@@ -8,7 +8,7 @@
     <form @submit.prevent="getResult" method="get">
       <div class="input-group">
         <!-- ref = kwd : input박스의 입력값을 받아오기 위해 -->
-        <input ref="kwd" type="text" name="kwd" class="form-control">
+        <input ref="kwd" type="text" name="kwd" class="form-control" id="ipt">
         <div class="input-group-append">
           <button class="btn" type="submit" id="btn_search">
             <i class="fas fa-search"></i>
@@ -61,14 +61,34 @@ export default {
 </script>
 
 <style scoped>
-#btn_search {
-  background-color: #cdd4ca;
-}
 
-input:focus {
-  outline: none;
+#btn_search {
+  background-color: #ffffff;
+  height: 3em;
+  border-top: 3px solid #f20b04;
+  border-right: 3px solid #f20b04;
+  border-bottom: 3px solid #f20b04;
+  border-left: 0px #ffffff;
+  color: #f20b04;
+  font-weight: bold;
+}
+#ipt{
+  height: 3em;
+  border-top: 3px solid #f20b04;
+  border-left: 3px solid #f20b04;
+  border-bottom: 3px solid #f20b04;
 }
 #search {
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+input:focus{
+  border: 0px ;
+  box-shadow: none;
+}
+button:focus{
+  border: 0px ;
+  box-shadow: none;
 }
 </style>

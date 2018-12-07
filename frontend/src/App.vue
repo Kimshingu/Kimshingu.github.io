@@ -15,4 +15,22 @@ export default {};
 ::selection {
   background-color: #dae5de;
 }
+.bg-color1{
+  background-color: #06591E;
+}
+.text-color1{
+  color: #06591E;
+}
+.bg-color2{
+  background-color: #014014;
+}
+.bg-color3{
+  background-color: #EFEADD;
+}
+.bg-color4{
+  background-color: #8C0803;
+}
+.bg-color5{
+  background-color: #BF1011;
+}
 </style>

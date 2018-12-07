@@ -31,7 +31,7 @@ export default {
     Article: Article,
     Footer: Footer
   }
-  /* 테스트용 로그인
+
   ,
   created() {
     sessionStorage.setItem(
@@ -46,7 +46,7 @@ export default {
       })
     );
   }
-  */
+
 };
 </script>
 <style>

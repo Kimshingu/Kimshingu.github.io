@@ -4,10 +4,10 @@
       <h3 class="text-left">상품정보</h3>
       <hr>
       <div class="row">
-        <div class="col-6">
+        <div class="col-4">
           <img :src="getImgUrl(product[0].id)" alt="" width="100" height="100">
         </div>
-        <div class="col-6">{{productView}}</div>
+        <div class="col-8">{{productView}}</div>
       </div>
       <hr>
       <h3 class="text-left">구매자 정보</h3>

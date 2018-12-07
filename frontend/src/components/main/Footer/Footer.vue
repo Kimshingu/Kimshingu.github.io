@@ -32,9 +32,8 @@ export default {
   /* font-size: 1.2rem; */
   margin: 30px 50px 30px 50px;
 }
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300,400');
 #footer span {
- font-family: 'Noto Serif KR', sans-serif;
+ font-family: sans-serif;
  font-size: 12px;
 }
 </style>
