@@ -2,8 +2,8 @@
   <div v-if="prop">
     <h4>{{prop.name}}</h4>
     <hr>
-    <li>{{localePrice}} 원</li>
-    <li>{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
+    <li class="productPrice">{{localePrice}} 원</li>
+    <li class="deliveryCharge" >{{localeCharge!='0'?localeCharge+' 원':'무료배송'}}</li>
     <!-- <li>{{prop.seller}}</li> -->
     <b-form-select v-model="selectedSize" value="null" id="size" :options="sizeOp" class="mb-3"/>
     <b-form-select v-model="selectedColor" value="null" id="color" :options="colorOp" class="mb-3"/>
@@ -47,11 +47,12 @@ export default {
   methods: {
     goCart() {
       var self = this;
+
       if (sessionStorage.getItem("user") === null) {
+        alert('회원만 구매가능한 상품입니다. 로그인 화면으로 이동합니다.')
         this.$router.push("/login");
       }
-
-      if (
+      else if (
         this.selectedCount !== null &&
         (this.selectedSize !== null && this.selectedColor !== null)
       ) {
@@ -70,22 +71,27 @@ export default {
             console.log(error);
           });
       } else {
-        alert("정보를 모두 선택하십시오.");
+        alert("옵션을 모두 선택해주세요.");
       }
+
     },
     goOrder() {
+
       this.prop.color = this.selectedColor;
       this.prop.size = this.selectedSize;
       this.prop.hitcount = this.selectedCount;
 
-      if (
+      if (sessionStorage.getItem("user") === null) {
+        alert('회원만 구매가능한 상품입니다. 로그인 화면으로 이동합니다.')
+        this.$router.push("/login");
+      } else if (
         this.selectedCount !== null &&
         (this.selectedSize !== null && this.selectedColor !== null)
       ) {
         sessionStorage.setItem("order", JSON.stringify([this.prop]));
         this.$router.push("/order");
       } else {
-        alert("정보를 모두 선택하십시오.");
+        alert("옵션을 모두 선택해주세요.");
       }
     }
   },

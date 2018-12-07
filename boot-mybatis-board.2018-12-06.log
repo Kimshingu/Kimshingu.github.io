@@ -1295,3 +1295,314 @@
 2018:12:06 18:38:43.946 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:12:06 18:38:43.946 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:31:03 KST 2018]; root of context hierarchy 
 2018:12:06 18:38:43.946 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:06 18:41:06.997 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on MSDN-SPECIAL with PID 6276 (C:\Users\Administrator\Desktop\project\project_Mall\target\classes started by Administrator in C:\Users\Administrator\Desktop\project\project_Mall) 
+2018:12:06 18:41:07.002 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:06 18:41:07.173 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:41:07 KST 2018]; root of context hierarchy 
+2018:12:06 18:41:08.163 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:06 18:41:08.182 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:06 18:41:08.183 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:06 18:41:08.267 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:06 18:41:08.267 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1094 ms 
+2018:12:06 18:41:08.394 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:06 18:41:08.395 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:06 18:41:08.398 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:06 18:41:08.398 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:06 18:41:08.399 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:06 18:41:08.399 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:06 18:41:08.768 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/schema.sql] 
+2018:12:06 18:41:08.789 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/schema.sql] in 20 ms. 
+2018:12:06 18:41:08.792 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/data.sql] 
+2018:12:06 18:41:08.808 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/data.sql] in 16 ms. 
+2018:12:06 18:41:09.157 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:41:07 KST 2018]; root of context hierarchy 
+2018:12:06 18:41:09.205 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[DELETE]}" onto public void com.example.demo.controller.CartController.deleteCart(com.example.demo.dto.Cart) 
+2018:12:06 18:41:09.206 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:06 18:41:09.207 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:06 18:41:09.208 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:06 18:41:09.208 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:06 18:41:09.209 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:06 18:41:09.210 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:06 18:41:09.211 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:06 18:41:09.211 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:06 18:41:09.213 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:06 18:41:09.214 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:06 18:41:09.238 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:41:09.239 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:41:09.269 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:41:09.296 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:06 18:41:09.759 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:06 18:41:09.938 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:06 18:41:09.973 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:06 18:41:09.977 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.307 seconds (JVM running for 3.902) 
+2018:12:06 18:41:17.428 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:06 18:41:17.428 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:06 18:41:17.441 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms 
+2018:12:06 18:41:17.502 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700  |0               |ho1.jpg |0        |     |[null] |
+|2  |나이키 골프 모던핏 폴로 티셔츠                     |32450  |0               |ho2.jpg |0        |     |[null] |
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094            |26900  |0               |ho1.jpg |0        |     |[null] |
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651        |22000  |2500            |ho2.jpg |0        |     |[null] |
+|5  |나이키 트랙탑 져지 자켓                         |44000  |0               |ho1.jpg |0        |     |[null] |
+|6  |나이키 에어맥스97 운동화 트리플화이트                 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:41:28.229 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:06 18:41:28.230 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:41:07 KST 2018]; root of context hierarchy 
+2018:12:06 18:41:28.232 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:06 18:43:34.545 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on MSDN-SPECIAL with PID 6400 (C:\Users\Administrator\Desktop\project\project_Mall\target\classes started by Administrator in C:\Users\Administrator\Desktop\project\project_Mall) 
+2018:12:06 18:43:34.549 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:06 18:43:34.714 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:43:34 KST 2018]; root of context hierarchy 
+2018:12:06 18:43:35.704 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:06 18:43:35.722 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:06 18:43:35.722 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:06 18:43:35.802 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:06 18:43:35.803 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1090 ms 
+2018:12:06 18:43:35.921 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:06 18:43:35.922 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:06 18:43:35.925 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:06 18:43:35.926 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:06 18:43:35.926 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:06 18:43:35.926 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:06 18:43:36.254 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/schema.sql] 
+2018:12:06 18:43:36.274 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/schema.sql] in 20 ms. 
+2018:12:06 18:43:36.277 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/data.sql] 
+2018:12:06 18:43:36.291 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/data.sql] in 14 ms. 
+2018:12:06 18:43:36.650 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:43:34 KST 2018]; root of context hierarchy 
+2018:12:06 18:43:36.698 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[DELETE]}" onto public void com.example.demo.controller.CartController.deleteCart(com.example.demo.dto.Cart) 
+2018:12:06 18:43:36.699 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:06 18:43:36.700 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:06 18:43:36.701 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:06 18:43:36.701 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:06 18:43:36.702 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:06 18:43:36.703 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:06 18:43:36.704 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:06 18:43:36.705 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:06 18:43:36.707 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:06 18:43:36.708 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:06 18:43:36.733 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:43:36.734 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:43:36.764 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:43:36.791 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:06 18:43:37.093 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:06 18:43:37.264 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:06 18:43:37.296 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:06 18:43:37.300 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.049 seconds (JVM running for 3.6) 
+2018:12:06 18:43:43.301 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:06 18:43:43.302 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:06 18:43:43.316 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+2018:12:06 18:43:46.041 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700  |0               |ho1.jpg |0        |     |[null] |
+|2  |나이키 골프 모던핏 폴로 티셔츠                     |32450  |0               |ho2.jpg |0        |     |[null] |
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094            |26900  |0               |ho1.jpg |0        |     |[null] |
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651        |22000  |2500            |ho2.jpg |0        |     |[null] |
+|5  |나이키 트랙탑 져지 자켓                         |44000  |0               |ho1.jpg |0        |     |[null] |
+|6  |나이키 에어맥스97 운동화 트리플화이트                 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:43:47.133 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:44:01.587 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|id |name              |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|2  |나이키 골프 모던핏 폴로 티셔츠 |32450 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:45:27.424 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700  |0               |ho1.jpg |0        |     |[null] |
+|2  |나이키 골프 모던핏 폴로 티셔츠                     |32450  |0               |ho2.jpg |0        |     |[null] |
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094            |26900  |0               |ho1.jpg |0        |     |[null] |
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651        |22000  |2500            |ho2.jpg |0        |     |[null] |
+|5  |나이키 트랙탑 져지 자켓                         |44000  |0               |ho1.jpg |0        |     |[null] |
+|6  |나이키 에어맥스97 운동화 트리플화이트                 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:45:28.309 INFO  --- [http-nio-8080-exec-10] jdbc.resultsettable : 
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:45:37.588 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                       |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094 |26900 |0               |ho1.jpg |0        |     |[null] |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:46:51.592 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:06 18:46:51.593 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:43:34 KST 2018]; root of context hierarchy 
+2018:12:06 18:46:51.595 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:06 18:46:54.204 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on MSDN-SPECIAL with PID 3144 (C:\Users\Administrator\Desktop\project\project_Mall\target\classes started by Administrator in C:\Users\Administrator\Desktop\project\project_Mall) 
+2018:12:06 18:46:54.208 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:06 18:46:54.362 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:46:54 KST 2018]; root of context hierarchy 
+2018:12:06 18:46:55.351 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:06 18:46:55.368 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:06 18:46:55.368 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:06 18:46:55.449 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:06 18:46:55.450 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1088 ms 
+2018:12:06 18:46:55.573 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:06 18:46:55.574 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:06 18:46:55.577 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:06 18:46:55.578 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:06 18:46:55.578 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:06 18:46:55.578 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:06 18:46:55.907 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/schema.sql] 
+2018:12:06 18:46:55.927 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/schema.sql] in 20 ms. 
+2018:12:06 18:46:55.930 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/data.sql] 
+2018:12:06 18:46:55.945 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/C:/Users/Administrator/Desktop/project/project_Mall/target/classes/data.sql] in 15 ms. 
+2018:12:06 18:46:56.301 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:46:54 KST 2018]; root of context hierarchy 
+2018:12:06 18:46:56.351 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[DELETE]}" onto public void com.example.demo.controller.CartController.deleteCart(com.example.demo.dto.Cart) 
+2018:12:06 18:46:56.352 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:06 18:46:56.352 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:06 18:46:56.353 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:06 18:46:56.354 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:06 18:46:56.355 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:06 18:46:56.355 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:06 18:46:56.356 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:06 18:46:56.357 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:06 18:46:56.359 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:06 18:46:56.359 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:06 18:46:56.385 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:46:56.385 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:46:56.416 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:06 18:46:56.444 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:06 18:46:56.716 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:06 18:46:56.887 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:06 18:46:56.920 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:06 18:46:56.924 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.023 seconds (JVM running for 3.598) 
+2018:12:06 18:46:58.984 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:06 18:46:58.985 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:06 18:46:58.998 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms 
+2018:12:06 18:47:02.193 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700  |0               |ho1.jpg |0        |     |[null] |
+|2  |나이키 골프 모던핏 폴로 티셔츠                     |32450  |0               |ho2.jpg |0        |     |[null] |
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094            |26900  |0               |ho1.jpg |0        |     |[null] |
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651        |22000  |2500            |ho2.jpg |0        |     |[null] |
+|5  |나이키 트랙탑 져지 자켓                         |44000  |0               |ho1.jpg |0        |     |[null] |
+|6  |나이키 에어맥스97 운동화 트리플화이트                 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:03.232 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:05.359 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|6  |나이키 에어맥스97 운동화 트리플화이트 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:07.167 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|id |name              |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|2  |나이키 골프 모던핏 폴로 티셔츠 |32450 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:08.979 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                       |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094 |26900 |0               |ho1.jpg |0        |     |[null] |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:10.736 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                           |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651 |22000 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:12.215 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:15.646 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:25.062 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                         |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|15 |페이퍼플레인키즈 PK7761 아동 장화 유아 레인부츠 남아 여아 신발 슈즈 우비 |21900 |2500            |ho2.jpg |0        |     |[null] |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:25.639 INFO  --- [http-nio-8080-exec-1] jdbc.resultsettable : 
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                         |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|15 |페이퍼플레인키즈 PK7761 아동 장화 유아 레인부츠 남아 여아 신발 슈즈 우비 |21900 |2500            |ho2.jpg |0        |     |[null] |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:31.468 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                         |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|15 |페이퍼플레인키즈 PK7761 아동 장화 유아 레인부츠 남아 여아 신발 슈즈 우비 |21900 |2500            |ho2.jpg |0        |     |[null] |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:35.182 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                            |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+|13 |아도르클래식 핏좋은 7컬러 결혼식 캐주얼 남자 정장 수트 |92000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:40.325 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                            |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+|13 |아도르클래식 핏좋은 7컬러 결혼식 캐주얼 남자 정장 수트 |92000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:47:44.423 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700  |0               |ho1.jpg |0        |     |[null] |
+|2  |나이키 골프 모던핏 폴로 티셔츠                     |32450  |0               |ho2.jpg |0        |     |[null] |
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094            |26900  |0               |ho1.jpg |0        |     |[null] |
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651        |22000  |2500            |ho2.jpg |0        |     |[null] |
+|5  |나이키 트랙탑 져지 자켓                         |44000  |0               |ho1.jpg |0        |     |[null] |
+|6  |나이키 에어맥스97 운동화 트리플화이트                 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------------------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:48:43.774 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:06 18:49:06.429 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:06 18:49:06.429 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Thu Dec 06 18:46:54 KST 2018]; root of context hierarchy 
+2018:12:06 18:49:06.431 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 

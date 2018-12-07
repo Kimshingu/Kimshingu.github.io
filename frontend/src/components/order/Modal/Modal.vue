@@ -5,7 +5,7 @@
       <hr>
       <div class="row">
         <div class="col-6">
-          <img src="https://via.placeholder.com/50x50" alt>
+          <img :src="getImgUrl(product[0].id)" alt="" width="100" height="100">
         </div>
         <div class="col-6">{{productView}}</div>
       </div>
@@ -257,6 +257,12 @@ export default {
           this.product[0].color
         }`;
       }
+    }
+  },
+  methods:{
+    getImgUrl: function(id){
+      var images = require.context("../../productimg",false,/\.jpg$/);
+      return images("./" + id + ".jpg");
     }
   }
 };

@@ -10,8 +10,11 @@
   </thead>
   <tbody>
     <tr v-for="(i,index) in prop.cart" :key="index">
-      <td> <img src="https://via.placeholder.com/50x50" class="thumbnail"> {{prop.product[index].name}}<br> 색상: {{i.cart_color}} | 사이즈: {{i.cart_size}} | 수량:
-        <input name="cartCount" class="cartCount" type="number" v-model="i.cart_count" min="1" max="20"></td>
+      <td> <img :src="getImgUrl(prop.product[index].id)" alt="" width="50" height="50"  class="thumbnail">
+        {{prop.product[index].name}}<br>
+        색상: {{i.cart_color}} | 사이즈: {{i.cart_size}} |
+        수량: <input name="cartCount" class="cartCount" type="number" v-model="i.cart_count" min="1" max="20">
+      </td>
       <td>{{prop.product[index].price}} 원</td>
       <td>{{prop.product[index].deliveryCharge!='0'?prop.product[index].deliveryCharge+' 원':'무료배송'}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button @click="deleteCart(i)" class="btn btn-secondary">&times;</button></td>
     </tr>
@@ -34,6 +37,10 @@ export default {
         .catch(function(error) {
           console.log(error);
         });
+    },
+    getImgUrl: function(id){
+      var images = require.context("../../../productimg/", false, /\.jpg$/);
+      return images("./" + id + ".jpg");
     },
     reload() {
       location.reload();
