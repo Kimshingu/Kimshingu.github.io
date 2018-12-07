@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center">
-    <img @click="goMain" src="./logo.png" alt>
+  <div class="text-center" id="test">
+    <span id="logotxt" @click="goMain"> 수진스컴퍼니</span>
   </div>
 </template>
 
@@ -15,8 +15,12 @@ export default {
 </script>
 
 <style>
-img {
-  cursor: pointer;
-
+#logotxt {
+ font-family: 'Gugi';
+ font-size: 2.3rem;
+ cursor: pointer;
+}
+#test{
+  margin-top: 50px;
 }
 </style>

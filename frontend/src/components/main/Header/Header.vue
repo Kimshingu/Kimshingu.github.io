@@ -4,10 +4,10 @@
       <div class="col-3">
         <logo></logo>
       </div>
-      <div class="col-6">
+      <div class="col-5">
         <Search></Search>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <Login></Login>
       </div>
     </div>
@@ -28,7 +28,4 @@ export default {
 </script>
 
 <style>
-#header {
-  background-color: #dae5de;
-}
 </style>
