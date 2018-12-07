@@ -2133,3 +2133,738 @@
 2018:12:07 15:18:03.226 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
 2018:12:07 15:18:03.227 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 15:07:34 KST 2018]; root of context hierarchy 
 2018:12:07 15:18:03.229 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:07 16:53:11.547 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3815 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:07 16:53:11.558 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:07 16:53:11.764 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 16:53:11 KST 2018]; root of context hierarchy 
+2018:12:07 16:53:12.719 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:07 16:53:12.736 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:07 16:53:12.737 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:07 16:53:12.798 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:07 16:53:12.798 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1034 ms 
+2018:12:07 16:53:12.912 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:07 16:53:12.914 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:07 16:53:12.917 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:07 16:53:12.917 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:07 16:53:12.918 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:07 16:53:12.918 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:07 16:53:13.247 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:07 16:53:13.268 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 20 ms. 
+2018:12:07 16:53:13.270 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:07 16:53:13.287 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 16 ms. 
+2018:12:07 16:53:13.616 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 16:53:11 KST 2018]; root of context hierarchy 
+2018:12:07 16:53:13.666 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:07 16:53:13.667 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:07 16:53:13.668 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[DELETE]}" onto public void com.example.demo.controller.CartController.deleteCart(com.example.demo.dto.Cart) 
+2018:12:07 16:53:13.669 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:07 16:53:13.669 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getproduct],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.MainController.getMainProduct() 
+2018:12:07 16:53:13.670 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:07 16:53:13.671 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:07 16:53:13.672 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:07 16:53:13.674 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:07 16:53:13.674 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:07 16:53:13.677 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:07 16:53:13.678 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:07 16:53:13.709 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 16:53:13.709 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 16:53:13.763 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 16:53:13.793 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:07 16:53:14.104 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:07 16:53:14.247 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:07 16:53:14.286 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:07 16:53:14.290 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.027 seconds (JVM running for 3.675) 
+2018:12:07 16:53:17.594 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:07 16:53:17.595 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:07 16:53:17.609 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+2018:12:07 16:53:18.058 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 16:53:18.074 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|id |name             |price |delivery_charge |image   |hitcount |size |color  |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|12 |통큰마켓 안녕토비 기모 후드티 |9900  |2500            |ho1.jpg |0        |     |[null] |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.080 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|19 |화려한외출 여성 겨울 2018 기모 퍼 캐주얼 방한화 플랫 로퍼 |10600 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.087 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                       |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094 |26900 |0               |ho1.jpg |0        |     |[null] |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.099 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                            |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+|13 |아도르클래식 핏좋은 7컬러 결혼식 캐주얼 남자 정장 수트 |92000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.104 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|---------------|------|----------------|--------|---------|-----|-------|
+|id |name           |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------|------|----------------|--------|---------|-----|-------|
+|17 |여성 체키 체크 남방 셔츠 |13900 |0               |ho1.jpg |0        |     |[null] |
+|---|---------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.109 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|11 |포플러 샤인다이아 니트 원피스 9708 여성 겨울 루즈핏 터틀넥 |29800 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.113 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|11 |포플러 샤인다이아 니트 원피스 9708 여성 겨울 루즈핏 터틀넥 |29800 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.119 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|id |name             |price |delivery_charge |image   |hitcount |size |color  |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|12 |통큰마켓 안녕토비 기모 후드티 |9900  |2500            |ho1.jpg |0        |     |[null] |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.891 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 16:53:18.894 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|19 |화려한외출 여성 겨울 2018 기모 퍼 캐주얼 방한화 플랫 로퍼 |10600 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.897 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|11 |포플러 샤인다이아 니트 원피스 9708 여성 겨울 루즈핏 터틀넥 |29800 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.900 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|id |name                |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|21 |유어삭스 남성용 골지무지맨 긴목양말 |1200  |2500            |ho1.jpg |0        |     |[null] |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.903 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|id |name             |price |delivery_charge |image   |hitcount |size |color  |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|12 |통큰마켓 안녕토비 기모 후드티 |9900  |2500            |ho1.jpg |0        |     |[null] |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.906 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.910 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|14 |라우드 여성용 노엘 코트 |38900 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.914 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|---------------|------|----------------|--------|---------|-----|-------|
+|id |name           |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------|------|----------------|--------|---------|-----|-------|
+|17 |여성 체키 체크 남방 셔츠 |13900 |0               |ho1.jpg |0        |     |[null] |
+|---|---------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:18.918 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|-------------|------|----------------|--------|---------|-----|-------|
+|id |name         |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------|------|----------------|--------|---------|-----|-------|
+|9  |아동공용 세이지 슬립색 |11300 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:24.195 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|------|---------|-----|------|--------|
+|email |password |name |phone |address |
+|------|---------|-----|------|--------|
+|------|---------|-----|------|--------|
+ 
+2018:12:07 16:53:30.959 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaa    |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 16:53:30.961 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaa    |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 16:53:30.963 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaa    |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 16:53:30.964 INFO  --- [http-nio-8080-exec-7] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaa    |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 16:53:31.005 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 16:53:31.011 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-------------|------|----------------|--------|---------|-----|-------|
+|id |name         |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------|------|----------------|--------|---------|-----|-------|
+|9  |아동공용 세이지 슬립색 |11300 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.014 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.017 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|18 |슈즈앤 메리제인 여성 펌프스 sn333 |12800 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.019 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|18 |슈즈앤 메리제인 여성 펌프스 sn333 |12800 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.022 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.026 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                    |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|20 |언니네양말 여성용 겨울양말 앙고라 심플무지 |2440  |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.028 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-------------|------|----------------|--------|---------|-----|-------|
+|id |name         |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------|------|----------------|--------|---------|-----|-------|
+|9  |아동공용 세이지 슬립색 |11300 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:31.031 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|6  |나이키 에어맥스97 운동화 트리플화이트 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:32.286 INFO  --- [http-nio-8080-exec-6] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:53:45.016 INFO  --- [http-nio-8080-exec-9] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:40.159 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:07 16:54:40.161 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 16:53:11 KST 2018]; root of context hierarchy 
+2018:12:07 16:54:40.162 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:07 16:54:45.455 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3822 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:07 16:54:45.466 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:07 16:54:45.674 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 16:54:45 KST 2018]; root of context hierarchy 
+2018:12:07 16:54:46.903 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:07 16:54:46.923 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:07 16:54:46.924 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:07 16:54:46.982 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:07 16:54:46.983 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1310 ms 
+2018:12:07 16:54:47.101 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:07 16:54:47.103 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:07 16:54:47.106 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:07 16:54:47.107 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:07 16:54:47.107 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:07 16:54:47.107 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:07 16:54:47.475 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:07 16:54:47.502 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 26 ms. 
+2018:12:07 16:54:47.504 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:07 16:54:47.525 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 20 ms. 
+2018:12:07 16:54:47.902 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 16:54:45 KST 2018]; root of context hierarchy 
+2018:12:07 16:54:47.954 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:07 16:54:47.956 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:07 16:54:47.957 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[DELETE]}" onto public void com.example.demo.controller.CartController.deleteCart(com.example.demo.dto.Cart) 
+2018:12:07 16:54:47.958 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:07 16:54:47.959 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getproduct],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.MainController.getMainProduct() 
+2018:12:07 16:54:47.961 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:07 16:54:47.962 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:07 16:54:47.963 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:07 16:54:47.965 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:07 16:54:47.966 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:07 16:54:47.970 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:07 16:54:47.971 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:07 16:54:47.999 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 16:54:48.000 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 16:54:48.049 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 16:54:48.081 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:07 16:54:48.395 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:07 16:54:48.545 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:07 16:54:48.656 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:07 16:54:48.708 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.538 seconds (JVM running for 4.041) 
+2018:12:07 16:54:48.748 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:07 16:54:48.749 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:07 16:54:48.762 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms 
+2018:12:07 16:54:49.282 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 16:54:49.292 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                         |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+|15 |페이퍼플레인키즈 PK7761 아동 장화 유아 레인부츠 남아 여아 신발 슈즈 우비 |21900 |2500            |ho2.jpg |0        |     |[null] |
+|---|---------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.295 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                           |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651 |22000 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.298 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|14 |라우드 여성용 노엘 코트 |38900 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.301 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                    |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|7  |기모 스마일토끼 아동복 세트 MNB0388 |14900 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.304 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.306 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+|1  |나이키 NSW 클럽 플리스 기모 조거팬츠 트레이닝 바지 804408 |39700 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.309 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                    |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|7  |기모 스마일토끼 아동복 세트 MNB0388 |14900 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:49.312 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|14 |라우드 여성용 노엘 코트 |38900 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.362 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 16:54:50.365 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|14 |라우드 여성용 노엘 코트 |38900 |0               |ho2.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.368 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.371 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                    |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|7  |기모 스마일토끼 아동복 세트 MNB0388 |14900 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.375 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|id |name              |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|2  |나이키 골프 모던핏 폴로 티셔츠 |32450 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.378 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|id |name                |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|21 |유어삭스 남성용 골지무지맨 긴목양말 |1200  |2500            |ho1.jpg |0        |     |[null] |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.384 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                       |price |delivery_charge |image   |hitcount |size |color  |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+|3  |나이키프로 쿨 컴프레션 반팔 티셔츠 703094 |26900 |0               |ho1.jpg |0        |     |[null] |
+|---|---------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.388 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|11 |포플러 샤인다이아 니트 원피스 9708 여성 겨울 루즈핏 터틀넥 |29800 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:50.394 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|id |name              |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|2  |나이키 골프 모던핏 폴로 티셔츠 |32450 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:54:51.268 INFO  --- [http-nio-8080-exec-4] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 16:58:08.125 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:07 16:58:08.126 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 16:54:45 KST 2018]; root of context hierarchy 
+2018:12:07 16:58:08.127 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2018:12:07 17:02:02.317 INFO  --- [main] c.e.demo.SpringVueMallApplication : Starting SpringVueMallApplication on cheongonhong-ui-MacBook-Pro.local with PID 3861 (/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes started by Sarkh in /Users/Sarkh/Documents/Workspace/Spring/project_Mall) 
+2018:12:07 17:02:02.328 INFO  --- [main] c.e.demo.SpringVueMallApplication : No active profile set, falling back to default profiles: default 
+2018:12:07 17:02:02.522 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 17:02:02 KST 2018]; root of context hierarchy 
+2018:12:07 17:02:03.455 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:07 17:02:03.478 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:07 17:02:03.478 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2018:12:07 17:02:03.562 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:07 17:02:03.562 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1040 ms 
+2018:12:07 17:02:03.678 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2018:12:07 17:02:03.679 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'webServlet' to [/h2-console/*] 
+2018:12:07 17:02:03.682 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018:12:07 17:02:03.682 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018:12:07 17:02:03.683 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018:12:07 17:02:03.683 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2018:12:07 17:02:04.032 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] 
+2018:12:07 17:02:04.055 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/schema.sql] in 23 ms. 
+2018:12:07 17:02:04.057 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executing SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] 
+2018:12:07 17:02:04.073 INFO  --- [main] o.s.j.datasource.init.ScriptUtils : Executed SQL script from URL [file:/Users/Sarkh/Documents/Workspace/Spring/project_Mall/target/classes/data.sql] in 15 ms. 
+2018:12:07 17:02:04.401 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 17:02:02 KST 2018]; root of context hierarchy 
+2018:12:07 17:02:04.451 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.CartController.postCart(com.example.demo.dto.Cart) 
+2018:12:07 17:02:04.452 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.CartController.getCart(java.lang.String) 
+2018:12:07 17:02:04.453 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cart],methods=[DELETE]}" onto public void com.example.demo.controller.CartController.deleteCart(com.example.demo.dto.Cart) 
+2018:12:07 17:02:04.454 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.LoginController.postLogin(com.example.demo.dto.User) 
+2018:12:07 17:02:04.454 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getproduct],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.MainController.getMainProduct() 
+2018:12:07 17:02:04.455 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.OrderController.postOrder() 
+2018:12:07 17:02:04.456 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/product],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.ProductController.postSearch(int) 
+2018:12:07 17:02:04.458 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SearchController.postSearch(java.lang.String) 
+2018:12:07 17:02:04.459 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.SignupController.isValidAccount(java.lang.String) 
+2018:12:07 17:02:04.460 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.Object com.example.demo.controller.SignupController.postSingup(com.example.demo.dto.User,javax.servlet.http.HttpSession,org.springframework.ui.Model) 
+2018:12:07 17:02:04.463 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018:12:07 17:02:04.464 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018:12:07 17:02:04.492 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 17:02:04.492 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 17:02:04.542 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018:12:07 17:02:04.568 WARN  --- [main] o.s.b.a.t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration) 
+2018:12:07 17:02:04.893 INFO  --- [main] o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2018:12:07 17:02:05.044 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2018:12:07 17:02:05.084 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2018:12:07 17:02:05.088 INFO  --- [main] c.e.demo.SpringVueMallApplication : Started SpringVueMallApplication in 3.054 seconds (JVM running for 3.767) 
+2018:12:07 17:02:08.600 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018:12:07 17:02:08.600 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2018:12:07 17:02:08.614 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+2018:12:07 17:02:08.826 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 17:02:08.839 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.843 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.847 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|id |name                |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|21 |유어삭스 남성용 골지무지맨 긴목양말 |1200  |2500            |ho1.jpg |0        |     |[null] |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.853 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                           |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651 |22000 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.862 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|id |name              |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+|2  |나이키 골프 모던핏 폴로 티셔츠 |32450 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.868 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|18 |슈즈앤 메리제인 여성 펌프스 sn333 |12800 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.872 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                    |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|20 |언니네양말 여성용 겨울양말 앙고라 심플무지 |2440  |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:08.874 INFO  --- [http-nio-8080-exec-3] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.048 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 17:02:10.051 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|18 |슈즈앤 메리제인 여성 펌프스 sn333 |12800 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.055 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                    |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+|7  |기모 스마일토끼 아동복 세트 MNB0388 |14900 |2500            |ho2.jpg |0        |     |[null] |
+|---|------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.058 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.062 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|-----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                   |price |delivery_charge |image   |hitcount |size |color  |
+|---|-----------------------|------|----------------|--------|---------|-----|-------|
+|16 |여성 포켓 체크 플레어 A라인 롱 스커트 |16800 |0               |ho2.jpg |0        |     |[null] |
+|---|-----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.065 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.071 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|id |name                  |price |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+|8  |기모 헤이즐 아동복 세트 MNB0395 |13900 |2500            |ho2.jpg |0        |     |[null] |
+|---|----------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.076 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|id |name                |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+|21 |유어삭스 남성용 골지무지맨 긴목양말 |1200  |2500            |ho1.jpg |0        |     |[null] |
+|---|--------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:10.087 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                      |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+|10 |CE 레이스세트블라우스(0325H809) 빅사이즈 여성의류 미시옷 블라우스 |33400 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:13.183 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|------|---------|-----|------|--------|
+|email |password |name |phone |address |
+|------|---------|-----|------|--------|
+|------|---------|-----|------|--------|
+ 
+2018:12:07 17:02:19.974 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaaa   |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 17:02:19.976 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaaa   |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 17:02:19.978 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaaa   |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 17:02:19.980 INFO  --- [http-nio-8080-exec-5] jdbc.resultsettable : 
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|email         |password                                                         |name |phone |address |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+|test@test.com |03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 |aaa  |aaaa  |aaaaa   |
+|--------------|-----------------------------------------------------------------|-----|------|--------|
+ 
+2018:12:07 17:02:20.052 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---------|
+|count(*) |
+|---------|
+|21       |
+|---------|
+ 
+2018:12:07 17:02:20.055 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                      |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+|10 |CE 레이스세트블라우스(0325H809) 빅사이즈 여성의류 미시옷 블라우스 |33400 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.069 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|19 |화려한외출 여성 겨울 2018 기모 퍼 캐주얼 방한화 플랫 로퍼 |10600 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.080 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|id |name             |price |delivery_charge |image   |hitcount |size |color  |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+|12 |통큰마켓 안녕토비 기모 후드티 |9900  |2500            |ho1.jpg |0        |     |[null] |
+|---|-----------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.088 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|id |name          |price |delivery_charge |image   |hitcount |size |color  |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+|5  |나이키 트랙탑 져지 자켓 |44000 |0               |ho1.jpg |0        |     |[null] |
+|---|--------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.094 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+|19 |화려한외출 여성 겨울 2018 기모 퍼 캐주얼 방한화 플랫 로퍼 |10600 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.100 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|6  |나이키 에어맥스97 운동화 트리플화이트 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.110 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                           |price |delivery_charge |image   |hitcount |size |color  |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+|4  |나이키코리아 정품 레가시 91 골프 캡모자 892651 |22000 |2500            |ho2.jpg |0        |     |[null] |
+|---|-------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:20.118 INFO  --- [http-nio-8080-exec-8] jdbc.resultsettable : 
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|id |name                  |price  |delivery_charge |image   |hitcount |size |color  |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+|6  |나이키 에어맥스97 운동화 트리플화이트 |189000 |0               |ho2.jpg |0        |     |[null] |
+|---|----------------------|-------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:21.895 INFO  --- [http-nio-8080-exec-2] jdbc.resultsettable : 
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+|id |name                                      |price |delivery_charge |image   |hitcount |size |color  |
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+|10 |CE 레이스세트블라우스(0325H809) 빅사이즈 여성의류 미시옷 블라우스 |33400 |0               |ho2.jpg |0        |     |[null] |
+|---|------------------------------------------|------|----------------|--------|---------|-----|-------|
+ 
+2018:12:07 17:02:46.505 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:07 17:02:46.505 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2adfbe: startup date [Fri Dec 07 17:02:02 KST 2018]; root of context hierarchy 
+2018:12:07 17:02:46.507 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
