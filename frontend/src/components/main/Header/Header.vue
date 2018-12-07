@@ -1,5 +1,5 @@
 <template>
-  <div id="header" class="align-middle">
+  <div id="header">
     <div class="row">
       <div class="col-3">
         <logo></logo>

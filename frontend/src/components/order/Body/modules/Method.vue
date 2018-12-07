@@ -192,10 +192,10 @@ export default {
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #4ec989;
+  background-color: #bf1011;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #4ec989;
+  background-color: #bf1011;
 }
 </style>

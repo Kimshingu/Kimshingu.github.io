@@ -273,22 +273,4 @@ a {
 a:hover {
   text-decoration: none;
 }
-.bg-color1 {
-  background-color: #f2be54;
-}
-.btn-color1 {
-  background-color: #4ec989;
-}
-
-.btn-color1:hover {
-  background-color: #3d8e64;
-}
-
-.btn-color2 {
-  background-color: #cdd4ca;
-}
-
-.btn-color2:hover {
-  background-color: #999e97;
-}
 </style>
