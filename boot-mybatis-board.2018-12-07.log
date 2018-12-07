@@ -5631,3 +5631,6 @@ INSERT INTO CART(EMAIL, ID, SIZE, COLOR, COUNT) VALUES(?, ?, ?, ?, ?) [23505-197
 2018:12:07 12:30:49.578 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
 2018:12:07 12:30:49.578 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
 2018:12:07 12:30:49.591 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms 
+2018:12:07 12:33:14.606 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2018:12:07 12:33:14.606 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a514af7: startup date [Fri Dec 07 12:30:42 KST 2018]; root of context hierarchy 
+2018:12:07 12:33:14.606 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 

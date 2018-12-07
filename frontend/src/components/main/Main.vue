@@ -1,9 +1,21 @@
 <template>
   <div>
     <div id="main" class="align-middle">
-      <Header></Header>
-      <Article></Article>
-      <Footer></Footer>
+      <div class="row">
+        <div class="col-12">
+          <Header></Header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <Article></Article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <Footer></Footer>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -38,10 +50,8 @@ export default {
 };
 </script>
 <style>
-
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 .align-middle {
-  font-family: 'Noto Serif KR', sans-serif;
-	} 
-
+  font-family: "Noto Serif KR", sans-serif;
+}
 </style>
