@@ -33,7 +33,7 @@ export default {
   margin: 30px 50px 30px 50px;
 }
 #footer span {
- font-family: sans-serif;
- font-size: 12px;
+  font-family: sans-serif;
+  font-size: 12px;
 }
 </style>

@@ -11,8 +11,8 @@
     <b-form-input v-model="selectedCount" type="number" min="1" max="20"></b-form-input>
 
     <br>
-    <button @click="goCart" type="button" class="btn btn-secondary">장바구니에 담기</button>
-    <button @click="goOrder" type="button" class="btn btn-primary">바로구매</button>
+    <button @click="goCart" type="button" class="btn btn-color2">장바구니에 담기</button>
+    <button @click="goOrder" type="button" class="btn btn-color1">바로구매</button>
   </div>
 </template>
 

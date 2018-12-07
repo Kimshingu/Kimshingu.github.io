@@ -11,7 +11,8 @@
       <tbody>
         <tr>
           <td>{{totalPrice}} 원</td>
-          <td>{{totalDelivery!='0'?totalDelivery+' 원':'무료배송'}}</td>
+          <td v-if="this.prop.product.length>0">{{totalDelivery!='0'?totalDelivery+' 원':'무료배송'}}</td>
+          <td v-else></td>
           <td>{{totalResult}} 원</td>
         </tr>
       </tbody>
