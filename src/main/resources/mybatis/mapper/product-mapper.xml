@@ -14,6 +14,10 @@
 		<result property="color" column="COLOR" />
 		<!-- <result property="seller" column="SELLER"/> -->
 	</resultMap>
+		
+	<select id="countAll" resultType="int">
+	SELECT COUNT(*) FROM PRODUCT
+	</select>		
 	
 	<!--입력한 검색어가 들어간 제품명을 db에서 찾는다.-->
 	<select id="searchAll" parameterType="String" resultMap="resultProductMap">

@@ -13,7 +13,7 @@ public interface ProductMapper {
 	
 	public List<Product> searchAll(String name);
 	public Product searchById(int id);
-	public int count(String name);
+	public int countAll();
 	public List<Product> findByPageSizeUsingBind(int page, int size);
 	
 }
