@@ -22,17 +22,6 @@
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./car.jpg"
-          alt="image slot"
-        >
-      </b-carousel-slide>
-      
-      <b-carousel-slide>
-        <img
-          slot="img"
-          width="1024"
-          height="480"
-          class="d-block img-fluid w-100"
           src="./carousel2.jpg"
           alt="image slot"
         >
@@ -44,7 +33,7 @@
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carousel3.jpg"
+          src="./carousel1.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
@@ -56,6 +45,17 @@
           height="480"
           class="d-block img-fluid w-100"
           src="./carousel4.jpg"
+          alt="image slot"
+        >
+      </b-carousel-slide>
+      
+      <b-carousel-slide>
+        <img
+          slot="img"
+          width="1024"
+          height="480"
+          class="d-block img-fluid w-100"
+          src="./carousel3.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
