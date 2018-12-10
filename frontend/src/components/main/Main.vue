@@ -33,19 +33,20 @@ export default {
   }
 
   ,
-  created() {
-    sessionStorage.setItem(
-      "user",
-      JSON.stringify({
-        address: "aaa",
-        email: "test@test.com",
-        name: "Tom",
-        password:
-          "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        phone: "1234"
-      })
-    );
-  }
+  // 테스트용 아이디
+  // created() {
+  //   sessionStorage.setItem(
+  //     "user",
+  //     JSON.stringify({
+  //       address: "aaa",
+  //       email: "test@test.com",
+  //       name: "Tom",
+  //       password:
+  //         "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+  //       phone: "1234"
+  //     })
+  //   );
+  // }
 
 };
 </script>
