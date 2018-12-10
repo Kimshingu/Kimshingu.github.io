@@ -23,17 +23,6 @@
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carouselimg/carousel2.jpg"
-          alt="image slot"
-        >
-      </b-carousel-slide>
-      
-      <b-carousel-slide class="carousel">
-        <img
-          slot="img"
-          width="1024"
-          height="480"
-          class="d-block img-fluid w-100"
           src="./carouselimg/carousel1.jpg"
           alt="image slot"
         >
@@ -45,7 +34,7 @@
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carouselimg/carousel4.jpg"
+          src="./carouselimg/carousel2.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
@@ -57,6 +46,17 @@
           height="480"
           class="d-block img-fluid w-100"
           src="./carouselimg/carousel3.jpg"
+          alt="image slot"
+        >
+      </b-carousel-slide>
+      
+      <b-carousel-slide class="carousel">
+        <img
+          slot="img"
+          width="1024"
+          height="480"
+          class="d-block img-fluid w-100"
+          src="./carouselimg/carousel4.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
