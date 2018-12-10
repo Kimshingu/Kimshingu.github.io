@@ -56,4 +56,7 @@ export default {
 </script>
 
 <style>
+tbody {
+  vertical-align :middle;
+}
 </style>
