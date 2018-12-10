@@ -27,7 +27,9 @@ export default {
     price: function() {
       let result = 0;
       for (const product of this.prop) {
-        result += product.price;
+        let price = product.price;
+        let count = product.hitcount;
+        result += price * count;
       }
 
       return Number(result).toLocaleString("en");

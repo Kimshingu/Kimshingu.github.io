@@ -11,8 +11,14 @@
     <b-form-input v-model="selectedCount" type="number" min="1" max="20"></b-form-input>
 
     <br>
-    <button @click="goCart" type="button" class="btn btn-color2">장바구니에 담기</button>
-    <button @click="goOrder" type="button" class="btn btn-color1">바로구매</button>
+    <div class="row">
+      <div class="col-6">
+        <button @click="goCart" type="button" class="btn btn-color2 detailBtn" >장바구니에 담기</button>
+      </div>
+      <div class="col-6">
+        <button @click="goOrder" type="button" class="btn btn-color1 detailBtn">바로구매</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -28,7 +34,7 @@ export default {
   },
   data() {
     return {
-      selectedCount: null,
+      selectedCount: 1,
       selectedSize: null,
       selectedColor: null,
       sizeOp: [
@@ -109,5 +115,9 @@ li {
 
 .deliveryCharge {
   font-size: 0.8em;
+}
+.detailBtn{
+  width: 100% ;
+  height: 100% ;
 }
 </style>

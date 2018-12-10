@@ -7,14 +7,17 @@
       </div>
       <div class="col-4"></div>
     </div>
+    <hr>
     <br>
     <div v-if="product" class="row">
+      <div class="col-1"></div>
       <div class="col-5">
         <img :src="getImgUrl(product.id)" alt width="400" height="400">
       </div>
-      <div class="col-7">
+      <div class="col-5">
         <Detail :prop="product"></Detail>
       </div>
+      <div class="col-1"></div>
     </div>
   </div>
 </template>
