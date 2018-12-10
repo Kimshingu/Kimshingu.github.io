@@ -20,7 +20,7 @@
     <div class="text-center">
       <button @click="goIndex" type="button" class="btn btn-color2">계속 쇼핑하기</button>
       <button v-if="prop.cart.length!==0" @click="goOrder" type="button" class="btn btn-color1">주문하기</button>
-      </div>  
+      </div>
   </div>
 </template>
 
@@ -28,6 +28,7 @@
 export default {
   props: ["prop"],
   computed: {
+    // 전체 카트의 수량과 가격을 곱한 상품비에 세자리마다 ,표기를 한다.
     totalPrice: function() {
       let price = 0;
       for (let index = 0; index < this.prop.cart.length; index++) {
@@ -38,6 +39,7 @@ export default {
       return this.localize(price);
     },
 
+    // 전체 카트의 배송비를 더하여 세자리 마다 ,표기를 한다.
     totalDelivery: function() {
       let charge = 0;
 
@@ -47,7 +49,7 @@ export default {
       }
       return this.localize(charge);
     },
-
+    // 상품비와 배송비를 더하여 세자리 마다 ,표기를 한다.
     totalResult: function() {
       let price = 0;
       let charge = 0;
@@ -71,6 +73,7 @@ export default {
     goIndex() {
       this.$router.push("/");
     },
+    // 세션에 product 데이터를 저장하고 this.$router.push("/order")로 이동한다.
     goOrder() {
       for (let index = 0; index < this.prop.cart.length; index++) {
         this.prop.product[index].size = this.prop.cart[index].cart_size;

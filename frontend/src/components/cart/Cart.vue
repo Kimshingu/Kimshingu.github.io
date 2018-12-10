@@ -1,9 +1,8 @@
 <template lang="html">
   <div class="">
     <cartHeader></cartHeader>
-
+    <!-- 하위 컴포넌트인 cartBody, cartFooter로 data인 데이터를 전달한다. -->
     <cartBody :prop="data"></cartBody>
-
     <cartFooter :prop="data"></cartFooter>
   </div>
 
@@ -26,6 +25,8 @@ export default {
     cartBody: body,
     cartFooter: footer
   },
+  // spring CartController @GetMapping("/cart")
+	// public Object getCart(@RequestParam(value="id") String user_email) 데이터를 가져온다.
   created() {
     var self = this;
     this.$http

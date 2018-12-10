@@ -11,6 +11,7 @@
 <script>
 export default {
   methods: {
+    // 제품 id를 세션에 등록하고 /product로 이동한다.
     goDetail() {
       sessionStorage.setItem("p_id", this.prop.id);
       this.$router.push("/product");
@@ -22,10 +23,11 @@ export default {
   },
   props: ["prop"],
   computed: {
+    // 세자리 단위마다 ,를 표시한다.
     localePrice() {
       return Number(this.prop.price).toLocaleString("en");
     },
-
+    // 13자리가 넘는 경우 ...를 붙인다.
     ModifProductName() {
       if (this.prop.name.length >= 13) {
         return this.prop.name.slice(0, 12) + "...";

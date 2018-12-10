@@ -2,6 +2,7 @@
   <div>
     <Carousel></Carousel>
     <div v-for="(product,index) in Products" :key="index" class="randomProducts">
+      <!--하위 Block components에 product 데이터를 전달한다. -->
       <Block :prop="product" class="randomProducts_c"></Block>
     </div>
   </div>
@@ -20,6 +21,8 @@ export default {
     Carousel: Carousel,
     Block: Block
   },
+
+  // MainController에서 데이터를 가져온다.
   created() {
     var self = this;
     this.$http

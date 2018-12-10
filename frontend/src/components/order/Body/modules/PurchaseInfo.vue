@@ -51,6 +51,7 @@ export default {
     }
   },
   created() {
+    // info 객체를 세션에 저장한다.
     let info = { price: this.price, charge: this.charge, total: this.total };
     sessionStorage.setItem("info", JSON.stringify(info));
   }

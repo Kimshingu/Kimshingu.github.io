@@ -27,6 +27,7 @@ export default {
       data: null
     };
   },
+  // 세션에 저장된 user 데이터를 data에 저장한다.
   created() {
     this.data = JSON.parse(sessionStorage.getItem("user"));
   }

@@ -5,7 +5,6 @@
     <li class="productPrice">{{localePrice}} 원</li>
     <li class="deliveryCharge">{{localeCharge!='0'?'배송비 : '+localeCharge+' 원':'무료배송'}}</li>
     <br>
-    <!-- <li>{{prop.seller}}</li> -->
     <b-form-select v-model="selectedSize" value="null" id="size" :options="sizeOp" class="mb-3"/>
     <b-form-select v-model="selectedColor" value="null" id="color" :options="colorOp" class="mb-3"/>
     <b-form-input v-model="selectedCount" type="number" min="1" max="20"></b-form-input>
@@ -13,7 +12,7 @@
     <br>
     <div class="row">
       <div class="col-6">
-        <button @click="goCart" type="button" class="btn btn-color2 detailBtn" >장바구니에 담기</button>
+        <button @click="goCart" type="button" class="btn btn-color2 detailBtn">장바구니에 담기</button>
       </div>
       <div class="col-6">
         <button @click="goOrder" type="button" class="btn btn-color1 detailBtn">바로구매</button>
@@ -25,6 +24,7 @@
 <script>
 export default {
   computed: {
+    // 숫자 세자리 단위에서 ,를 표시한다.
     localePrice() {
       return Number(this.prop.price).toLocaleString("en");
     },
@@ -52,6 +52,9 @@ export default {
     };
   },
   methods: {
+    // 로그인 여부와 옵션 선택 여부 확인 후,
+    // spring CartController @PostMapping("/cart")에 데이터를 전달한다.
+    // 그 후   self.$router.push("/cart")로 이동한다.
     goCart() {
       var self = this;
 
@@ -81,6 +84,11 @@ export default {
         alert("옵션을 모두 선택해주세요.");
       }
     },
+
+    // 로그인 여부와 옵션 선택 여부 확인 후,
+    // color, size, count 수정 후 prop을 세션에 저장한다.
+    // 그 후  self.$router.push("/order")로 이동한다.
+    //
     goOrder() {
       this.prop.color = this.selectedColor;
       this.prop.size = this.selectedSize;
