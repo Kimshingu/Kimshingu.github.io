@@ -27,6 +27,7 @@
 <script>
 export default {
   methods: {
+    // 배송비와 상품비를 세 자리 단위마다 ,를 표기한다.
     charge: function(context) {
       return Number(context.deliveryCharge).toLocaleString("en");
     },

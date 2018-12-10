@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>결제방법</h2>
+    <!--라디오 버튼 생성 신용카드, 무통장입금, 실시간 계좌이체, 휴대폰결제-->
     <div id="radio">
       <b-form-radio-group v-model="radioSelected" name="method" class="radio">
         <div class="row">
@@ -19,6 +20,8 @@
         </div>
       </b-form-radio-group>
     </div>
+
+    <!-- 해당 radio 버튼을 선택할 경우에 나오는 table-->
     <table class="table" id="methodTable">
       <tbody v-if="radioSelected=='card'">
         <tr>
@@ -91,6 +94,7 @@ export default {
       halbuSelected: "All",
       bankSelected: null,
       phoneSelected: null,
+
       cardOptions: [
         { value: null, text: "선택" },
         { value: "shinhan", text: "신한카드" },
@@ -125,12 +129,16 @@ export default {
     };
   },
   created() {
+    // 초기값:: 변화가 없을 시 this.radioSelected를 method란 이름으로 방출한다.
     this.$bus.$emit("method", this.radioSelected);
+    // 현재 시각을 가져와서 1일을 더한다.
     this.date = moment()
       .add(1, "days")
       .format("YYYY[년] MM[월] Do h[시] mm[분 까지]");
   },
   watch: {
+    // 해당 데이터변화를 감지하여 함수를 실행한다.
+    // 변화가 있을 시 select를 method란 이름으로 방출한다.
     radioSelected: function() {
       let select = {
         radioSelected: this.radioSelected,
@@ -168,6 +176,7 @@ export default {
         halbuSelected: this.halbuSelected,
         bankSelected: this.bankSelected,
         phoneSelected: this.phoneSelected,
+        // 입금기한
         date: this.date
       };
       this.$bus.$emit("method", select);

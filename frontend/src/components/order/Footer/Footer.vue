@@ -1,5 +1,6 @@
 <template>
   <div id="orderFooter" class="text-center">
+    <!--옵션을 선택 해야만 해당 버튼이 실행된다.-->
     <Button
       v-if="isSelected"
       id="buyButton"
@@ -7,7 +8,10 @@
       class="btn btn-color1"
       v-b-modal.modal1
     >결제하기</Button>
+
+    <!--옵션을 선택하지 않으면 버튼만 활성화 된다. 아무 작동하지 않는다.-->
     <Button id="buyButton_fake" v-else type="button" class="btn btn-color1">결제하기</Button>
+    <!-- Modal components에  prop 데이터를 전달한다.-->
     <Modal :prop="prop"></Modal>
   </div>
 </template>
@@ -56,6 +60,7 @@ export default {
     }
   },
   created() {
+    // Method.vue의 select 데이터를 가져와서 Selected에 저장한다.
     this.$bus.$on("method", data => {
       this.Selected = data;
     });

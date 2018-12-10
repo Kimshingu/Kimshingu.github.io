@@ -12,7 +12,6 @@ public class Product {
 	private int id;
 	private String name;
 	private int price;
-	private String image;
 	private int deliveryCharge;
 	private int hitcount;
 	private String size;

@@ -15,6 +15,7 @@
         <img :src="getImgUrl(product.id)" alt width="400" height="400">
       </div>
       <div class="col-5">
+        <!-- 하위 컴포넌트인 Detail에 product 데이터를 전달한다. -->
         <Detail :prop="product"></Detail>
       </div>
       <div class="col-1"></div>
@@ -35,6 +36,7 @@ export default {
     logo: logo,
     Detail: Detail
   },
+  // spring ProductController @GetMapping (@RequestParam(value="id") int id)에서 데이터를 가져온다.
   created() {
     var self = this;
     this.$http

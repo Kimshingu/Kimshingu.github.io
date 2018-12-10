@@ -65,6 +65,7 @@
       </table>
 
       <h3 class="text-left">결제방법 : {{methodView}}</h3>
+
       <table class="table" v-if="select.radioSelected=='card'">
         <thead>
           <tr>
@@ -136,14 +137,21 @@ export default {
     };
   },
   created() {
+    // 세션에 저장된 order 객체를 this.product에 저장한다.
     this.product = JSON.parse(sessionStorage.getItem("order"));
 
+    // 세션에 저장된 user 객체를 this.data 저장한다.
+    this.data = JSON.parse(sessionStorage.getItem("user"));
+
+    // 세션에 저장된 info 객체를 this.info 저장한다.
+    this.info = JSON.parse(sessionStorage.getItem("info"));
+
+    // Method.vue의 select 데이터를 가져와서 Selected에 저장한다.
     this.$bus.$on("method", data => {
       this.select = data;
     });
-    this.data = JSON.parse(sessionStorage.getItem("user"));
-    this.info = JSON.parse(sessionStorage.getItem("info"));
   },
+
   filters: {
     uppercase: function(v) {
       if (v) {
@@ -151,6 +159,7 @@ export default {
       }
     }
   },
+
   computed: {
     methodView: function() {
       let result = "";
@@ -247,6 +256,8 @@ export default {
       }
       return result;
     },
+
+    // 여러 건을 구매할 경우 '외 #건' 으로 표기한다.
     productView: function() {
       if (this.product.length > 1) {
         return `${this.product[0].name} | ${this.product[0].size} | ${
