@@ -12,65 +12,65 @@
       v-model="slide"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
+      
     >
   
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-      <b-carousel-slide>
+      <b-carousel-slide class="carousel">
         <img
           slot="img"
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./car.jpg"
+          src="./carouselimg/carousel2.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
       
-      <b-carousel-slide>
+      <b-carousel-slide class="carousel">
         <img
           slot="img"
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carousel2.jpg"
+          src="./carouselimg/carousel1.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
       
-      <b-carousel-slide>
+      <b-carousel-slide class="carousel">
         <img
           slot="img"
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carousel3.jpg"
+          src="./carouselimg/carousel4.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
       
-      <b-carousel-slide>
+      <b-carousel-slide class="carousel">
         <img
           slot="img"
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carousel4.jpg"
+          src="./carouselimg/carousel3.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
 
-      <b-carousel-slide>
+      <b-carousel-slide class="carousel">
         <img
           slot="img"
           width="1024"
           height="480"
           class="d-block img-fluid w-100"
-          src="./carousel5.jpg"
+          src="./carouselimg/carousel5.jpg"
           alt="image slot"
         >
       </b-carousel-slide>
-    
     </b-carousel>
   </div>
 </template>
@@ -80,5 +80,8 @@ export default {};
 </script>
 
 <style>
+.carousel:focus {
+  outline: 0;
+}
 
 </style>
