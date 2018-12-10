@@ -19,6 +19,6 @@ export default {
   font-family: "Gugi";
   font-size: 2.3rem;
   cursor: pointer;
-  margin-top: 45px;
+  margin-top: 48px;
 }
 </style>
