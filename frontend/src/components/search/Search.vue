@@ -29,6 +29,7 @@ export default {
     };
   },
   /*
+  ( 주소창에 변화가 있을경우에 watch를 실행 )
   동일한 컴포넌트의 params 변경 사항에 반응하려면 $route 객체를 보면된다.
      watch: {
        '$route' (to, from) {

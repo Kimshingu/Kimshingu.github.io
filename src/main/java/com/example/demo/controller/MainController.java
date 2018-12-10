@@ -20,15 +20,21 @@ public class MainController {
 	@GetMapping("/getproduct")
 	public Object getMainProduct() {
 
+		// 메인의 보여지는 상품박스 리스트 
 		int productMax = mapper.countAll();
 		List<Product> list = new ArrayList<>();
 		Random rd = new Random();
 
-		for (int i = 0; i < 8; i++) {
-			int id = rd.nextInt(productMax) + 1;
-			list.add(mapper.searchById(id));
+		while (list.size() < 8) { // 리스트의 길이가 8이 될때까지 반복
+			int id = rd.nextInt(productMax) + 1; // 랜덤으로 제품번호 하나를 추첨
+			
+			// 해당 제품번호가 리스트에 포함되어있지 않다면 리스트에 추가
+			if (!list.contains(mapper.searchById(id))) { 
+				list.add(mapper.searchById(id));
+			}
 		}
-
+		
+		// 8개의 제품이 모두 추첨된 후 리스트를 리턴
 		return list;
 
 	}

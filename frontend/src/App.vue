@@ -46,7 +46,6 @@ export default {};
 .btn-color2 {
   background-color: #cdd4ca;
 }
-
 .btn-color2:hover {
   background-color: #999e97;
 }
