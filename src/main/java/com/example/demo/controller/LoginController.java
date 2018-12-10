@@ -35,8 +35,10 @@ public class LoginController {
 		 User 객체를 만든다.
 		*/
 		if (loginservice.loginAuthenticate(user).equals("success")) {
-			User passUser = new User(user.getEmail(), user.getPassword(), mapper.selectOne(user.getEmail()).getName(),
-					mapper.selectOne(user.getEmail()).getPhone(), mapper.selectOne(user.getEmail()).getAddress());
+			User passUser = new User(user.getEmail(), user.getPassword(), 
+					mapper.selectOne(user.getEmail()).getName(),
+					mapper.selectOne(user.getEmail()).getPhone(), 
+					mapper.selectOne(user.getEmail()).getAddress());
 			return passUser;
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);

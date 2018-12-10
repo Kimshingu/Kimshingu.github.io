@@ -16,7 +16,8 @@
         수량: <input name="cartCount" class="cartCount" type="number" v-model="i.cart_count" min="1" max="20">
       </td>
       <td>{{prop.product[index].price}} 원</td>
-      <td>{{prop.product[index].deliveryCharge!='0'?prop.product[index].deliveryCharge+' 원':'무료배송'}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button @click="deleteCart(i)" class="btn btn-secondary">&times;</button></td>
+      <td>{{prop.product[index].deliveryCharge!='0'?prop.product[index].deliveryCharge+' 원':'무료배송'}} 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button @click="deleteCart(i)" class="btn btn-secondary">&times;</button></td>
     </tr>
   </tbody>
 </table>
